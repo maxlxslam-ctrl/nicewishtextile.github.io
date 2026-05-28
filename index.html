@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nicewise Textile - Premium knit fabric supplier from Guangzhou Zhongda Market. Specializing in Modal-Cotton Jersey, Tencel fabrics for T-shirts, underwear, and children's wear.">
+    <title>Nicewise Textile Solution | Premium Knit Fabric Supplier Guangzhou</title>
+    <style>
+        :root {
+            --primary-color: #2c5282;
+            --secondary-color: #3182ce;
+            --accent-color: #38b2ac;
+            --light-bg: #f7fafc;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation - Removed for Single Page Layout */
+        /* nav {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        } */
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        
+        /* Header/Hero Section */
+        header {
+            background: url('images/banner-bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 120px 0 80px;
+            margin-top: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1392,320L1344,320C1296,320,1200,320,1104,320C1008,320,912,320,816,320C720,320,624,320,528,320C432,320,336,320,240,320C144,320,48,320,0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        
+        .header-content {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease;
+        }
+        
+        header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+        
+        .btn {
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 40px 30px;
+            border-radius: 15px;
+            background: var(--light-bg);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .feature-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
+        /* Products Section */
+        .products {
+            padding: 100px 0;
+            background: var(--light-bg);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            font-size: 1.1em;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4em;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #48bb78;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .product-info {
+            padding: 30px;
+        }
+        
+        .product-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .product-price {
+            font-size: 1.5em;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .product-info p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .product-specs {
+            background: var(--light-bg);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .product-specs ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+        
+        .product-specs li {
+            font-size: 0.9em;
+            color: var(--text-dark);
+        }
+        
+        .product-specs li strong {
+            color: var(--primary-color);
+        }
+        
+        .product-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+        
+        .product-link {
+            display: inline-block;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+        
+        .product-link:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+        }
+        
+        .about-text p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 25px;
+            background: var(--light-bg);
+            border-radius: 15px;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--secondary-color);
+            display: block;
+        }
+        
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.95em;
+        }
+        
+        .about-image {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            border-radius: 20px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 5em;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Why Choose Us */
+        .why-us {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+        }
+        
+        .why-us .section-title h2 {
+            color: white;
+        }
+        
+        .why-us .section-title p {
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .why-item {
+            text-align: center;
+            padding: 40px 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .why-number {
+            font-size: 3em;
+            font-weight: bold;
+            opacity: 0.3;
+            margin-bottom: 15px;
+        }
+        
+        .why-item h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .why-item p {
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: var(--light-bg);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+        
+        .contact-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .contact-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .contact-card p {
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+        
+        .contact-card a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        .contact-card a:hover {
+            color: var(--primary-color);
+        }
+        
+        .contact-cta {
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .contact-cta h3 {
+            font-size: 2em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .contact-cta p {
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            line-height: 2;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            header p {
+                font-size: 1.1em;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                height: 300px;
+            }
+            
+            .products-grid,
+            .features-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            /* Showcase sections responsive */
+            .showcase-content {
+                flex-direction: column !important;
+            }
+            
+            .showcase-image,
+            .showcase-text {
+                min-width: 100% !important;
+            }
+            
+            .showcase-image {
+                margin-bottom: 20px;
+            }
+            
+            .showcase-text {
+                padding: 25px !important;
+            }
+            
+            .showcase-content h2 {
+                font-size: 1.5em !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Removed - Single Page Layout -->
+    
+    <!-- Header/Hero Section -->
+    <header id="home">
+        <div class="container">
+            <div class="header-content">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <img src="images/logo.jpg" alt="Nicewise Textile Logo" style="height: 80px; vertical-align: middle; margin-right: 15px; border-radius: 8px; background: white; padding: 5px;">
+                    <span style="font-size: 2em; font-weight: bold; vertical-align: middle; color: white;">Nicewise Textile</span>
+                </div>
+                <h1>Premium Fabrics & Expert Garment Production</h1>
+                <p>Turning your vision into timeless apparel. Direct supply chain, in-house production, and ready stock — making sourcing faster and easier than ever.</p>
+                <div class="cta-buttons" style="justify-content: center;">
+                    <a href="https://wa.me/8613726225654?text=Hi!%20I'm%20interested%20in%20your%20fabrics.%20Can%20you%20send%20me%20free%20samples?" class="btn btn-primary" target="_blank">Request Samples</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <!-- Apparel Section - Left Image, Right Text -->
+            <div class="showcase-section">
+                <div class="showcase-content" style="display: flex; align-items: center; gap: 40px; margin-bottom: 60px;">
+                    <div class="showcase-image" style="flex: 1; min-width: 45%;">
+                        <img src="images/apparel picture.png" alt="Apparel on-sale and OEM" style="width: 100%; height: 400px; object-fit: cover; border-radius: 12px;">
+                    </div>
+                    <div class="showcase-text" style="flex: 1; min-width: 45%; padding: 30px;">
+                        <h2 style="font-size: 1.8em; margin-bottom: 15px; color: #2c5282; font-weight: 600;">Apparel on-sale and OEM</h2>
+                        <p style="font-size: 0.95em; line-height: 1.8; color: #718096; margin-bottom: 8px;">A wide variety of high-quality in-stock products</p>
+                        <p style="font-size: 0.95em; line-height: 1.8; color: #718096; margin-bottom: 8px;">One-Stop Fabric Sourcing and Garment Production</p>
+                        <p style="font-size: 0.95em; line-height: 1.8; color: #718096; margin-bottom: 25px;">Powerful resource integration to meet all your needs</p>
+                        <div>
+                            <a href="apparel-manufacturing.html" class="btn btn-primary" style="display: inline-block; padding: 10px 30px; background: #3182ce; color: white; text-decoration: none; border-radius: 20px; font-weight: 600; font-size: 0.9em; transition: all 0.3s;">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fabric Market Section - Left Text, Right Image -->
+            <div class="showcase-section">
+                <div class="showcase-content" style="display: flex; align-items: center; gap: 40px; margin-bottom: 60px; flex-direction: row-reverse;">
+                    <div class="showcase-image" style="flex: 1; min-width: 45%;">
+                        <img src="images/fabric picture.png" alt="Prime Location in Guangzhou Zhongda Fabric Market" style="width: 100%; height: 400px; object-fit: cover; border-radius: 12px;">
+                    </div>
+                    <div class="showcase-text" style="flex: 1; min-width: 45%; padding: 30px;">
+                        <h2 style="font-size: 1.8em; margin-bottom: 15px; color: #2c5282; font-weight: 600;">Prime Location in Guangzhou Zhongda Fabric Market</h2>
+                        <p style="font-size: 0.95em; line-height: 1.8; color: #718096; margin-bottom: 25px;">Direct access to a biggest international textile market of fabric suppliers, enabling real-time sourcing of latest textile trends and cost-effective bulk procurement for clients.</p>
+                        <div>
+                            <a href="fabric-sourcing.html" class="btn btn-primary" style="display: inline-block; padding: 10px 30px; background: #2c5282; color: white; text-decoration: none; border-radius: 20px; font-weight: 600; font-size: 0.9em; transition: all 0.3s;">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-cta">
+                <h3>Request Free Samples Today!</h3>
+                <p>Get hands-on with our premium fabrics. Free samples available for qualified buyers.</p>
+                <a href="https://wa.me/8613726225654?text=Hi!%20I'm%20interested%20in%20your%20fabrics.%20Can%20you%20send%20me%20free%20samples?" class="btn btn-primary" target="_blank">🚀 Contact Us on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nicewise Textile</h3>
+                    <p>Your trusted partner for premium knit fabrics from Guangzhou, China.</p>
+                    <p style="margin-top: 15px;">📍 International textile, chongda market, haizhu district, guangzhou china</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="https://www.facebook.com/fabricsboys/" target="_blank" style="display: flex; align-items: center; gap: 8px;">
+                        <svg style="width: 16px; height: 16px; fill: currentColor;" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/nicewishtextile/" target="_blank" style="display: flex; align-items: center; gap: 8px; margin-top: 10px;">
+                        <svg style="width: 16px; height: 16px; fill: currentColor;" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        Instagram
+                    </a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Service & Solution</h3>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 0.9em; line-height: 2;">
+                        <a href="fabric-sourcing.html" style="color: inherit; text-decoration: none; display: block; margin-bottom: 5px;">→ Fabric Sourcing Service</a>
+                        <a href="apparel-manufacturing.html" style="color: inherit; text-decoration: none; display: block; margin-bottom: 5px;">→ Apparel One-step Solution</a>
+                        <a href="#contact" style="color: inherit; text-decoration: none; display: block;">→ Ready Stock Clothing Wholesale</a>
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📧 nicewishfabric@outlook.com</p>
+                    <p>📱 +86 137 2622 5654</p>
+                    <p>🕐 Mon-Sat: 9:00-18:00 (GMT+8)</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nicewise Textile Solution. All rights reserved.</p>
+                <p style="margin-top: 10px;">Powered by 10+ years of textile industry expertise</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '70px';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = 'white';
+                navLinks.style.padding = '20px';
+                navLinks.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            }
+        });
+        
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                nav.style.background = 'white';
+            }
+        });
+    </script>
+</body>
+</html>

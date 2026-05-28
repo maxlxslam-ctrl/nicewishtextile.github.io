@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium fabric sourcing from Nicewise Textile - High-quality knit fabrics for apparel, sportswear, and fashion. Direct from Guangzhou textile market.">
+    <title>Fabric Sourcing | Premium Knit Fabrics | Nicewise Textile</title>
+    <style>
+        :root {
+            --primary-color: #2c5282;
+            --secondary-color: #3182ce;
+            --accent-color: #38b2ac;
+            --light-bg: #f7fafc;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        /* Back Button */
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 25px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .back-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        /* Intro Section */
+        .intro {
+            padding: 60px 0;
+            background: white;
+            text-align: center;
+        }
+        
+        .intro h2 {
+            font-size: 2em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .intro p {
+            font-size: 1.1em;
+            color: var(--text-light);
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        /* Products Grid */
+        .products-section {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            font-size: 1.1em;
+            color: var(--text-light);
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+        
+        .product-info {
+            padding: 25px;
+        }
+        
+        .product-model {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .product-specs {
+            background: var(--light-bg);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            font-size: 0.9em;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .spec-item:last-child {
+            border-bottom: none;
+        }
+        
+        .spec-label {
+            color: var(--text-light);
+            font-weight: 500;
+        }
+        
+        .spec-value {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+        
+        .product-desc {
+            color: var(--text-light);
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .product-action {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            flex: 1;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: var(--secondary-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-color);
+        }
+        
+        .btn-outline {
+            background: white;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+        }
+        
+        .btn-outline:hover {
+            background: var(--secondary-color);
+            color: white;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+            background: var(--light-bg);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+        
+        .feature-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.1em;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            opacity: 0.8;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .products-grid,
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .section-title h2 {
+                font-size: 1.6em;
+            }
+            
+            .products-grid,
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="back-btn">← Back to Home</a>
+            <h1>Fabric Sourcing</h1>
+            <p>Premium Knit Fabrics from Guangzhou Textile Market</p>
+        </div>
+    </header>
+    
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <h2>High-Quality Fabric Supply</h2>
+            <p>Sourcing from the world's largest textile market in China, we provide ready-made, premium fabrics for fashion apparel, sportswear, and home textiles. All products are in stock with competitive prices and fast delivery.</p>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Fabric Collection</h2>
+                <p>Explore our premium knit fabric range</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1: DY613 -->
+                <div class="product-card">
+                    <img src="images/products/DY613-42.5% Viscose 34% Nylon 12.8% Lyocell 1.7% Silk 9% Spandex-160cm-185gsm.jpg" alt="DY613 Lyocell Silk Roman Knit" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-model">DY613 - Lyocell Silk Roman Knit</h3>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Composition:</span>
+                                <span class="spec-value">42.5% Viscose, 34% Nylon, 12.8% Lyocell, 1.7% Silk, 9% Spandex</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">160cm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">185g/m²</span>
+                            </div>
+                        </div>
+                        <p class="product-desc">Luxury Lyocell-Silk Roma Knit Fabric - 185g High-End Tencel-Nylon Blend for Fashion T-Shirts & Skirts. Premium quality fabric with excellent drape and breathability.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 2: DY810 -->
+                <div class="product-card">
+                    <img src="images/products/DY810-100% Combed Cotton (Mercerized)-170cm-145gsm.jpg" alt="DY810 Mercerized Cotton" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-model">DY810 - Mercerized Combed Cotton</h3>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Composition:</span>
+                                <span class="spec-value">100% Combed Cotton (Mercerized)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">170cm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">145g/m²</span>
+                            </div>
+                        </div>
+                        <p class="product-desc">Premium Mercerized Combed Cotton fabric with smooth finish and enhanced luster. Perfect for high-quality T-shirts and lightweight apparel with superior comfort.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 3: DY820 -->
+                <div class="product-card">
+                    <img src="images/products/DY820-95% Cotton 5% Spandex (Mercerized)-175cm-170gsm.jpg" alt="DY820 Cotton Spandex" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-model">DY820 - Mercerized Cotton Spandex</h3>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Composition:</span>
+                                <span class="spec-value">95% Cotton, 5% Spandex (Mercerized)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">175cm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">170g/m²</span>
+                            </div>
+                        </div>
+                        <p class="product-desc">Mercerized Cotton-Spandex blend with excellent stretch and recovery. Ideal for form-fitting apparel, sportswear, and casual wear with enhanced comfort and mobility.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 4: DY822 -->
+                <div class="product-card">
+                    <img src="images/products/DY822-100% Combed Cotton (Liquid Ammonia Treated)-180cm-220gsm.jpg" alt="DY822 Liquid Ammonia Cotton" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-model">DY822 - Liquid Ammonia Cotton</h3>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Composition:</span>
+                                <span class="spec-value">100% Combed Cotton (Liquid Ammonia Treated)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">180cm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">220g/m²</span>
+                            </div>
+                        </div>
+                        <p class="product-desc">Premium Liquid Ammonia Treated Cotton with exceptional softness, durability, and color retention. Heavyweight fabric perfect for high-end fashion and premium apparel.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 5: DY828 -->
+                <div class="product-card">
+                    <img src="images/products/DY828-100% Combed Cotton (Mercerized)-175cm-170gsm.jpg" alt="DY828 Mercerized Cotton" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-model">DY828 - Mercerized Combed Cotton</h3>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Composition:</span>
+                                <span class="spec-value">100% Combed Cotton (Mercerized)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">175cm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">170g/m²</span>
+                            </div>
+                        </div>
+                        <p class="product-desc">High-quality Mercerized Combed Cotton with smooth surface and enhanced strength. Versatile mid-weight fabric suitable for various apparel applications.</p>
+                    </div>
+                </div>
+                
+                <!-- Product 6: DY833 -->
+                <div class="product-card">
+                    <img src="images/products/DY833-48% Modal 48% Cotton 4% Spandex-175cm-170gsm.jpg" alt="DY833 Modal Cotton" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-model">DY833 - Modal Cotton Spandex</h3>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Composition:</span>
+                                <span class="spec-value">48% Modal, 48% Cotton, 4% Spandex</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">175cm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">170g/m²</span>
+                            </div>
+                        </div>
+                        <p class="product-desc">Premium Modal-Cotton-Spandex blend combining the softness of Modal, the comfort of Cotton, and the stretch of Spandex. Perfect for comfortable everyday wear and activewear.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Our Fabrics?</h2>
+                <p>Quality, service, and value you can trust</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Premium Quality</h3>
+                    <p>All fabrics undergo strict quality control to ensure consistent high standards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Ready Stock</h3>
+                    <p>Wide range of fabrics available in stock for immediate delivery.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Competitive Price</h3>
+                    <p>Direct from manufacturers, offering the best value for your money.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Need More Information?</h2>
+            <p>Contact us for fabric specifications, samples, and pricing details.</p>
+            <a href="https://wa.me/8613726225654?text=Hi!%20I'm%20interested%20in%20your%20fabrics.%20Can%20you%20provide%20more%20information?" class="cta-button" target="_blank">📱 Contact on WhatsApp</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Nicewise Textile Solution. All rights reserved.</p>
+            <p style="margin-top: 10px;">Powered by 10+ years of textile industry expertise</p>
+        </div>
+    </footer>
+</body>
+</html>
