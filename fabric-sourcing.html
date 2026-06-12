@@ -304,15 +304,16 @@
                                 <span class="spec-label">Width:</span>
                                 <span class="spec-value">${f.width}</span>
                             </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Weight:</span>
-                                <span class="spec-value">${f.weight}</span>
+                                <div class="spec-item">
+                                    <span class="spec-label">Weight:</span>
+                                    <span class="spec-value">${f.weight}</span>
+                                </div>
                             </div>
+                            <p class="product-desc">${f.description}</p>
+                            <a href="product-detail.html?id=${f.id}" class="cta-button" style="padding: 10px 20px; font-size: 0.9em; width: 100%; display: block; margin-top: auto;">View Details</a>
                         </div>
-                        <p class="product-desc">${f.description}</p>
                     </div>
-                </div>
-            `).join('');
+                `).join('');
         }
 
         init();
