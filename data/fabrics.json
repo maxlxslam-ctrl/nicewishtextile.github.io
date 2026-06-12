@@ -3,12 +3,18 @@
     "id": "DY613",
     "name": "Lyocell Silk Roman Knit",
     "composition": "42.5% Viscose, 34% Nylon, 12.8% Lyocell, 1.7% Silk, 9% Spandex",
-    "comp_tag": "Lyocell Silk Blend",
+    "comp_tag": "Viscose Nylon Blend",
     "width": "160cm",
     "weight": "185g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY613-42.5%25%20Viscose%2034%25%20Nylon%2012.8%25%20Lyocell%201.7%25%20Silk%209%25%20Spandex-160cm-185gsm.jpg",
-    "description": "Luxury Lyocell-Silk Roma Knit Fabric - 185g High-End Tencel-Nylon Blend for Fashion T-Shirts & Skirts."
+    "description": "Luxury Lyocell-Silk Roma Knit Fabric - 185g High-End Tencel-Nylon Blend for Fashion T-Shirts & Skirts.",
+    "detail_img": "images/products/DY613-detail-1.jpg",
+    "color_card": [
+      "images/products/DY613-colors-1.jpg",
+      "images/products/DY613-colors-2.jpg"
+    ],
+    "application": "High-end T-shirts, dresses, luxury loungewear, and boutique office wear."
   },
   {
     "id": "DY810",
@@ -19,18 +25,28 @@
     "weight": "145g/m²",
     "weight_tag": "150gsm below",
     "image": "images/products/DY810-100%25%20Combed%20Cotton%20(Mercerized)-170cm-145gsm.jpg",
-    "description": "Premium Mercerized Combed Cotton fabric with smooth finish and enhanced luster."
+    "description": "Premium Mercerized Combed Cotton fabric with smooth finish and enhanced luster.",
+    "detail_img": "images/products/DY810-detail-1.jpg",
+    "color_card": "images/products/DY810-colors-1.jpg",
+    "application": "Premium polo shirts, lightweight summer T-shirts, and high-quality undershirts."
   },
   {
     "id": "DY820",
     "name": "Mercerized Cotton Spandex",
     "composition": "95% Cotton, 5% Spandex (Mercerized)",
-    "comp_tag": "Cotton Spandex",
+    "comp_tag": "Cotton Spandex Blend",
     "width": "175cm",
     "weight": "170g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY820-95%25%20Cotton%205%25%20Spandex%20(Mercerized)-175cm-170gsm.jpg",
-    "description": "Mercerized Cotton-Spandex blend with excellent stretch and recovery."
+    "description": "Mercerized Cotton-Spandex blend with excellent stretch and recovery.",
+    "detail_img": "images/products/DY820-detail-1.jpg",
+    "color_card": [
+      "images/products/DY820-colors-1.jpg",
+      "images/products/DY820-colors-2.jpg",
+      "images/products/DY820-colors-3.jpg"
+    ],
+    "application": "Fashionable T-shirts, athleisure wear, and comfortable everyday apparel."
   },
   {
     "id": "DY822",
@@ -46,9 +62,18 @@
     "application": "High-end T-shirts, Polo shirts, Boutique fashion",
     "description": "Our premium Liquid Ammonia Treated Cotton offers a soft, skin-friendly texture with exceptional luster and durability. It provides superior wrinkle resistance and maintains its shape and color after multiple washes. Perfect for high-end fashion brands seeking premium handfeel.",
     "faqs": [
-      { "q": "What is Liquid Ammonia Treatment?", "a": "It is a finishing process that improves fabric luster, handfeel, and wrinkle resistance by treating cotton fibers with liquid ammonia at low temperatures." },
-      { "q": "Is this fabric pre-shrunk?", "a": "Yes, our fabric undergoes professional pre-shrinking treatment. Residual shrinkage is typically below 3%." },
-      { "q": "Can I customize the color?", "a": "Absolutely! We offer lab-dip services. Custom dyeing takes approximately 15-20 days." }
+      {
+        "q": "What is Liquid Ammonia Treatment?",
+        "a": "It is a finishing process that improves fabric luster, handfeel, and wrinkle resistance by treating cotton fibers with liquid ammonia at low temperatures."
+      },
+      {
+        "q": "Is this fabric pre-shrunk?",
+        "a": "Yes, our fabric undergoes professional pre-shrinking treatment. Residual shrinkage is typically below 3%."
+      },
+      {
+        "q": "Can I customize the color?",
+        "a": "Absolutely! We offer lab-dip services. Custom dyeing takes approximately 15-20 days."
+      }
     ]
   },
   {
@@ -60,40 +85,52 @@
     "weight": "170g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY828-100%25%20Combed%20Cotton%20(Mercerized)-175cm-170gsm.jpg",
-    "description": "High-quality Mercerized Combed Cotton with smooth surface and enhanced strength."
+    "description": "High-quality Mercerized Combed Cotton with smooth surface and enhanced strength.",
+    "detail_img": "images/products/DY828-detail-1.jpg",
+    "color_card": "images/products/DY828-colors-1.jpg",
+    "application": "High-end casual wear, corporate uniforms, and boutique T-shirts."
   },
   {
     "id": "DY833",
     "name": "Modal Cotton Spandex",
     "composition": "48% Modal, 48% Cotton, 4% Spandex",
-    "comp_tag": "Modal Cotton Spandex",
+    "comp_tag": "Cotton Modal Blend",
     "width": "175cm",
     "weight": "170g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY833-48%25%20Modal%2048%25%20Cotton%204%25%20Spandex-175cm-170gsm.jpg",
-    "description": "Premium Modal-Cotton-Spandex blend combining softness and stretch."
+    "description": "Premium Modal-Cotton-Spandex blend combining softness and stretch.",
+    "detail_img": "images/products/DY833-detail-1.jpg",
+    "color_card": "images/products/DY833-colors-1.jpg",
+    "application": "Soft loungewear, pajamas, yoga wear, and body-hugging fashion tops."
   },
   {
     "id": "DY841",
     "name": "80s Silky Spandex Double-Sided",
     "composition": "93% Cotton, 7% Spandex",
-    "comp_tag": "Cotton Spandex",
+    "comp_tag": "Cotton Spandex Blend",
     "width": "170cm",
     "weight": "170g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY841-93%25cotton%207%25spandex-170cm-170gsm.jpg",
-    "description": "Exquisite 80s double-sided silky spandex fabric with a premium finish."
+    "description": "Exquisite 80s double-sided silky spandex fabric with a premium finish.",
+    "detail_img": "images/products/DY841-detail-1.jpg",
+    "color_card": "images/products/DY841-colors-1.jpg",
+    "application": "Luxury basic layers, premium women's tops, and high-stretch fashion garments."
   },
   {
     "id": "DY848",
-    "name": "Silky Cotton (100S/2)",
+    "name": "100S/2 cotton spandex single jersey",
     "composition": "100s 95% Cotton, 5% Spandex",
-    "comp_tag": "Cotton Spandex",
+    "comp_tag": "Cotton Spandex Blend",
     "width": "175cm",
     "weight": "170g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY848%20-100s%2095%25cotton5%25spandex-175cm-170gsm.jpg",
-    "description": "Ultra-premium double-thread mercerized cotton single jersey with lasting luster."
+    "description": "Ultra-premium double-thread mercerized cotton single jersey with lasting luster.",
+    "detail_img": "images/products/DY848-detail-1.jpg",
+    "color_card": "images/products/DY848-colors-1.jpg",
+    "application": "Ultra-premium business casual shirts, high-end gift apparel, and luxury T-shirts."
   },
   {
     "id": "DY857",
@@ -104,7 +141,10 @@
     "weight": "180g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY857-50s%20100%25%20double%20thread%20mercerized%20cotton-170cm-180gsm.jpg",
-    "description": "High-grade double-thread mercerized cotton with a structured yet soft handfeel."
+    "description": "High-grade double-thread mercerized cotton with a structured yet soft handfeel.",
+    "detail_img": "images/products/DY857-detail-1.jpg",
+    "color_card": "images/products/DY857-colors-1.jpg",
+    "application": "Structured polo shirts, durable workwear, and high-quality menswear."
   },
   {
     "id": "DY899",
@@ -115,28 +155,37 @@
     "weight": "210g/m²",
     "weight_tag": "205gsm - 260gsm",
     "image": "images/products/DY899-100%25%20Liquid%20Ammonia%20cotton-180cm-210gsm.jpg",
-    "description": "High-performance liquid ammonia treated single-sided cotton with wrinkle resistance."
+    "description": "High-performance liquid ammonia treated single-sided cotton with wrinkle resistance.",
+    "detail_img": "images/products/DY899-detail-1.jpg",
+    "color_card": "images/products/DY899-colors-1.jpg",
+    "application": "Wrinkle-resistant travel wear, premium daily T-shirts, and high-performance casual clothing."
   },
   {
     "id": "DY900",
     "name": "European-style Mercerized Cotton",
     "composition": "50% Cotton, 50% Modal (Mercerized)",
-    "comp_tag": "Modal Cotton Blend",
+    "comp_tag": "Cotton Modal Blend",
     "width": "170cm",
     "weight": "185g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY900-50%25cotton%2050%25modal-170cm-185gsm.jpg",
-    "description": "Elegant European-style blend of mercerized cotton and modal with silky luster."
+    "description": "Elegant European-style blend of mercerized cotton and modal with silky luster.",
+    "detail_img": "images/products/DY900-detail-1.jpg",
+    "color_card": "images/products/DY900-colors-1.jpg",
+    "application": "Sophisticated evening tops, designer casual wear, and luxury retail fashion."
   },
   {
     "id": "DY901",
     "name": "Cotton-Linen Twill Jersey",
     "composition": "76% Nylon, 24% Cotton (Linen-touch Twill)",
-    "comp_tag": "Nylon Cotton Blend",
+    "comp_tag": "Cotton Nylon Blend",
     "width": "170cm",
     "weight": "120g/m²",
     "weight_tag": "150gsm below",
     "image": "images/products/DY901-76%25Nylon%2024%25cotton-170cm-120gsm.jpg",
-    "description": "Lightweight cotton-nylon blend with a unique linen-like twill texture."
+    "description": "Lightweight cotton-nylon blend with a unique linen-like twill texture.",
+    "detail_img": "images/products/DY901-detail-1.jpg",
+    "color_card": "images/products/DY901-colors-1.jpg",
+    "application": "Summer fashion pieces, lightweight cardigans, and breathable resort wear."
   }
 ]

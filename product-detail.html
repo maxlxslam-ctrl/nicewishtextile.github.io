@@ -119,26 +119,26 @@
                     <!-- 2. Detailed Visuals Section (Vertical Big Images) -->
                     ${p.detail_img || p.color_card || p.design_img ? `
                         <div class="extended-visuals">
-                            ${p.detail_img ? `
+                            ${p.detail_img ? (Array.isArray(p.detail_img) ? p.detail_img : [p.detail_img]).map(img => `
                                 <div class="visual-container">
                                     <h3 class="visual-title">Fabric Close-up Details</h3>
-                                    <img src="${p.detail_img}" class="large-visual-img" alt="Detail">
+                                    <img src="${img}" class="large-visual-img" alt="Detail">
                                 </div>
-                            ` : ''}
+                            `).join('') : ''}
                             
-                            ${p.color_card ? `
+                            ${p.color_card ? (Array.isArray(p.color_card) ? p.color_card : [p.color_card]).map(img => `
                                 <div class="visual-container">
                                     <h3 class="visual-title">Available Color Palette</h3>
-                                    <img src="${p.color_card}" class="large-visual-img" alt="Color Swatches">
+                                    <img src="${img}" class="large-visual-img" alt="Color Swatches">
                                 </div>
-                            ` : ''}
+                            `).join('') : ''}
 
-                            ${p.design_img ? `
+                            ${p.design_img ? (Array.isArray(p.design_img) ? p.design_img : [p.design_img]).map(img => `
                                 <div class="visual-container">
                                     <h3 class="visual-title">Garment Design Reference</h3>
-                                    <img src="${p.design_img}" class="large-visual-img" alt="Design Layout">
+                                    <img src="${img}" class="large-visual-img" alt="Design Layout">
                                 </div>
-                            ` : ''}
+                            `).join('') : ''}
                         </div>
                     ` : ''}
 
