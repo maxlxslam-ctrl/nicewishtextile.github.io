@@ -51,9 +51,56 @@
         }
         
         .intro { padding: 60px 0; text-align: center; background: white; }
-        .intro h2 { font-size: 2em; color: var(--primary-color); margin-bottom: 20px; }
+        .intro h2 { font-size: 2em; color: var(--primary-color); margin-bottom: 10px; }
+
+        /* Filter Section */
+        .filter-section {
+            background: white;
+            padding: 20px 0;
+            border-bottom: 1px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .filter-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .filter-label {
+            font-weight: 600;
+            font-size: 0.9em;
+            color: var(--text-dark);
+        }
+
+        .filter-select {
+            padding: 8px 15px;
+            border-radius: 8px;
+            border: 1px solid #cbd5e0;
+            background: white;
+            font-size: 0.9em;
+            color: var(--text-dark);
+            cursor: pointer;
+            outline: none;
+            min-width: 160px;
+        }
+
+        .filter-select:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2);
+        }
         
-        .products-section { padding: 80px 0; background: var(--light-bg); }
+        .products-section { padding: 50px 0 80px; background: var(--light-bg); min-height: 400px; }
         .section-title { text-align: center; margin-bottom: 50px; }
         
         .products-grid {
@@ -112,6 +159,7 @@
         .product-desc { color: var(--text-light); font-size: 0.95em; margin-bottom: 20px; }
         
         .loading { text-align: center; padding: 40px; grid-column: 1 / -1; font-style: italic; }
+        .no-results { text-align: center; padding: 60px; grid-column: 1 / -1; color: var(--text-light); }
 
         .cta-section { padding: 80px 0; text-align: center; background: white; }
         .cta-button {
@@ -133,6 +181,9 @@
         
         @media (max-width: 1024px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 768px) {
+            .filter-container { flex-direction: column; align-items: stretch; padding: 0 20px; }
+            .filter-group { flex-direction: column; align-items: flex-start; }
+            .filter-select { width: 100%; }
             .products-grid { grid-template-columns: 1fr; }
             .product-image { height: 400px; }
         }
@@ -150,17 +201,35 @@
     <section class="intro">
         <div class="container">
             <h2>From Fabric to Fashion</h2>
-            <p>We work with audited garment factories to provide premium OEM/ODM services. Small MOQ support, fast sampling, and full quality control for global brands.</p>
+            <p>High-quality OEM/ODM services with flexible stock options.</p>
         </div>
     </section>
+
+    <!-- Filter Bar -->
+    <div class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label class="filter-label">Product Style:</label>
+                    <select class="filter-select" id="styleFilter">
+                        <option value="all">All Styles</option>
+                        <!-- Styles populated dynamically -->
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Stock Status:</label>
+                    <select class="filter-select" id="stockFilter">
+                        <option value="all">All Status</option>
+                        <option value="Ready to Ship">Ready to Ship</option>
+                        <option value="Made to Order">Made to Order</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <section class="products-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Garment Collection</h2>
-                <p>Browse our ready-to-ship and custom-order apparel</p>
-            </div>
-            
             <div class="products-grid" id="apparelGrid">
                 <div class="loading">Loading our apparel collection...</div>
             </div>
@@ -182,46 +251,92 @@
     </footer>
 
     <script>
-        async function loadApparel() {
-            const grid = document.getElementById('apparelGrid');
+        let allApparel = [];
+
+        async function init() {
             try {
                 const response = await fetch('data/apparel.json?t=' + new Date().getTime());
-                const products = await response.json();
+                allApparel = await response.json();
                 
-                grid.innerHTML = products.map(p => {
-                    const isReady = p.stock_type.toLowerCase().includes('ready');
-                    const badgeBg = isReady ? 'var(--ready-color)' : 'var(--order-color)';
-                    
-                    return `
-                        <div class="product-card">
-                            <div class="stock-badge" style="background: ${badgeBg}">${p.stock_type}</div>
-                            <img src="${p.image}" alt="${p.name}" class="product-image" loading="lazy">
-                            <div class="product-info">
-                                <h3 class="product-model">${p.name}</h3>
-                                <div class="product-specs">
-                                    <div class="spec-item">
-                                        <span class="spec-label">Composition:</span>
-                                        <span class="spec-value">${p.composition}</span>
-                                    </div>
-                                    <div class="spec-item">
-                                        <span class="spec-label">Size:</span>
-                                        <span class="spec-value">${p.size}</span>
-                                    </div>
-                                    <div class="spec-item">
-                                        <span class="spec-label">Colors:</span>
-                                        <span class="spec-value">${p.colors}</span>
-                                    </div>
-                                </div>
-                                <p class="product-desc">${p.description}</p>
-                            </div>
-                        </div>
-                    `;
-                }).join('');
+                populateStyles();
+                renderProducts(allApparel);
+                
+                // Add Listeners
+                document.getElementById('styleFilter').addEventListener('change', applyFilters);
+                document.getElementById('stockFilter').addEventListener('change', applyFilters);
+
             } catch (e) {
-                grid.innerHTML = '<div class="loading">Error loading apparel.</div>';
+                document.getElementById('apparelGrid').innerHTML = '<div class="loading">Error loading apparel.</div>';
             }
         }
-        window.addEventListener('DOMContentLoaded', loadApparel);
+
+        function populateStyles() {
+            const styleFilter = document.getElementById('styleFilter');
+            const styles = [...new Set(allApparel.map(p => p.style))].sort();
+            styles.forEach(style => {
+                const opt = document.createElement('option');
+                opt.value = style;
+                opt.textContent = style;
+                styleFilter.appendChild(opt);
+            });
+        }
+
+        function applyFilters() {
+            const style = document.getElementById('styleFilter').value;
+            const stock = document.getElementById('stockFilter').value;
+            
+            const filtered = allApparel.filter(p => {
+                const styleMatch = (style === 'all' || p.style === style);
+                const stockMatch = (stock === 'all' || p.stock_type === stock);
+                return styleMatch && stockMatch;
+            });
+            
+            renderProducts(filtered);
+        }
+
+        function renderProducts(products) {
+            const grid = document.getElementById('apparelGrid');
+            if (products.length === 0) {
+                grid.innerHTML = '<div class="no-results">No products match your current filters.</div>';
+                return;
+            }
+            
+            grid.innerHTML = products.map(p => {
+                const isReady = p.stock_type.toLowerCase().includes('ready');
+                const badgeBg = isReady ? 'var(--ready-color)' : 'var(--order-color)';
+                
+                return `
+                    <div class="product-card">
+                        <div class="stock-badge" style="background: ${badgeBg}">${p.stock_type}</div>
+                        <img src="${p.image}" alt="${p.name}" class="product-image" loading="lazy">
+                        <div class="product-info">
+                            <h3 class="product-model">${p.name}</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Style:</span>
+                                    <span class="spec-value">${p.style}</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Composition:</span>
+                                    <span class="spec-value">${p.composition}</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Size:</span>
+                                    <span class="spec-value">${p.size}</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Colors:</span>
+                                    <span class="spec-value">${p.colors}</span>
+                                </div>
+                            </div>
+                            <p class="product-desc">${p.description}</p>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        init();
     </script>
 </body>
 </html>
