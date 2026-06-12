@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="One-stop apparel manufacturing solutions from Nicewise Textile - Fabric sourcing, customized solutions, garment production, and quality assurance.">
-    <title>Apparel Manufacturing & Garment Production | Nicewise Textile</title>
+    <meta name="description" content="Professional Apparel Manufacturing Service by Nicewise Textile - Custom garment production, OEM/ODM services, and ready-to-ship apparel. One-stop supply chain solutions.">
+    <title>Apparel Manufacturing | Custom Garment Production | Nicewise Textile</title>
     <style>
         :root {
             --primary-color: #2c5282;
@@ -13,13 +13,11 @@
             --light-bg: #f7fafc;
             --text-dark: #2d3748;
             --text-light: #718096;
+            --ready-color: #48bb78;
+            --order-color: #4299e1;
         }
         
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
@@ -28,15 +26,10 @@
             overflow-x: hidden;
         }
         
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
         
-        /* Header */
         header {
-            background: linear-gradient(135deg, rgba(44,82,130,0.35) 0%, rgba(49,130,206,0.35) 100%), url('images/Apparel images.png');
+            background: linear-gradient(135deg, rgba(44,82,130,0.65) 0%, rgba(49,130,206,0.65) 100%), url('images/apparel picture.png');
             background-size: cover;
             background-position: center;
             color: white;
@@ -44,17 +37,7 @@
             text-align: center;
         }
         
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-        }
-        
-        header p {
-            font-size: 1.2em;
-            opacity: 0.95;
-        }
-        
-        /* Back Button */
+        header h1 { font-size: 2.5em; margin-bottom: 15px; }
         .back-btn {
             display: inline-block;
             margin-bottom: 30px;
@@ -64,293 +47,181 @@
             text-decoration: none;
             border-radius: 20px;
             font-weight: 500;
-            transition: all 0.3s;
+            transition: 0.3s;
         }
         
-        .back-btn:hover {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-2px);
-        }
+        .intro { padding: 60px 0; text-align: center; background: white; }
+        .intro h2 { font-size: 2em; color: var(--primary-color); margin-bottom: 20px; }
         
-        /* Content Sections */
-        .section {
-            padding: 80px 0;
-        }
+        .products-section { padding: 80px 0; background: var(--light-bg); }
+        .section-title { text-align: center; margin-bottom: 50px; }
         
-        .section-light {
-            background: var(--light-bg);
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        
-        .section-title h2 {
-            font-size: 2.2em;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-        
-        .section-title p {
-            font-size: 1.1em;
-            color: var(--text-light);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        /* Services Grid */
-        .services-grid {
+        .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 50px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
         }
         
-        .service-card {
+        .product-card {
             background: white;
-            padding: 35px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            border-left: 4px solid var(--secondary-color);
-        }
-        
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-        }
-        
-        .service-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
-        
-        .service-card p {
-            color: var(--text-light);
-            line-height: 1.8;
-        }
-        
-        /* Manufacturers Section */
-        .manufacturers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 40px;
-            margin-top: 50px;
-        }
-        
-        .manufacturer-card {
-            background: white;
-            border-radius: 15px;
+            border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-        }
-        
-        .manufacturer-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-        }
-        
-        .manufacturer-image {
-            width: 100%;
-            height: 300px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: 0.3s;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 4em;
+            flex-direction: column;
+            position: relative;
         }
         
-        .manufacturer-info {
-            padding: 30px;
-        }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
         
-        .manufacturer-info h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-size: 1.5em;
-        }
-        
-        .manufacturer-info p {
-            color: var(--text-light);
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-        
-        .manufacturer-link {
-            display: inline-block;
-            padding: 10px 25px;
-            background: var(--secondary-color);
-            color: white;
-            text-decoration: none;
+        .stock-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 5px 15px;
             border-radius: 20px;
-            font-weight: 600;
-            transition: all 0.3s;
+            color: white;
+            font-size: 0.8em;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            background: #f0f0f0;
         }
         
-        .manufacturer-link:hover {
-            background: var(--primary-color);
-        }
+        .product-info { padding: 25px; flex-grow: 1; }
+        .product-model { font-size: 1.25em; font-weight: bold; color: var(--primary-color); margin-bottom: 15px; }
         
-        /* CTA Section */
-        .cta-section {
-            background: white;
-            color: var(--text-dark);
-            padding: 80px 0;
-            text-align: center;
+        .product-specs { background: var(--light-bg); padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            font-size: 0.9em;
+            border-bottom: 1px solid #e2e8f0;
         }
+        .spec-item:last-child { border-bottom: none; }
+        .spec-label { color: var(--text-light); font-weight: 500; min-width: 100px; }
+        .spec-value { color: var(--text-dark); font-weight: 600; text-align: right; }
         
-        .cta-section h2 {
-            font-size: 2.2em;
-            margin-bottom: 20px;
-        }
+        .product-desc { color: var(--text-light); font-size: 0.95em; margin-bottom: 20px; }
         
-        .cta-section p {
-            font-size: 1.1em;
-            opacity: 0.95;
-            margin-bottom: 30px;
-        }
-        
+        .loading { text-align: center; padding: 40px; grid-column: 1 / -1; font-style: italic; }
+
+        .cta-section { padding: 80px 0; text-align: center; background: white; }
         .cta-button {
             display: inline-block;
             padding: 15px 40px;
-            background: white;
-            color: var(--primary-color);
+            background: #2d3748;
+            color: white;
             text-decoration: none;
             border-radius: 30px;
             font-weight: 600;
-            font-size: 1.05em;
-            transition: all 0.3s;
         }
         
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        
-        /* Footer */
         footer {
-            background: linear-gradient(135deg, rgba(44,82,130,0.35) 0%, rgba(49,130,206,0.35) 100%), url('images/Apparel images.png');
-            background-size: cover;
-            background-position: center;
+            background: #2d3748;
             color: white;
             padding: 40px 0;
             text-align: center;
         }
         
-        footer p {
-            opacity: 0.8;
-        }
-        
-        /* Responsive */
+        @media (max-width: 1024px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
-            }
-            
-            .section-title h2 {
-                font-size: 1.6em;
-            }
-            
-            .services-grid,
-            .manufacturers-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .manufacturer-image {
-                height: 200px;
-            }
+            .products-grid { grid-template-columns: 1fr; }
+            .product-image { height: 400px; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <a href="index.html" class="back-btn">← Back to Home</a>
-            <h1>Apparel Manufacturing & Garment Production</h1>
-            <p>One-stop apparel manufacturing solutions</p>
+            <h1>Apparel Manufacturing</h1>
+            <p>One-Stop Custom Clothing & Supply Chain Solutions</p>
         </div>
     </header>
     
-    <!-- Introduction Section -->
-    <section class="section">
+    <section class="intro">
+        <div class="container">
+            <h2>From Fabric to Fashion</h2>
+            <p>We work with audited garment factories to provide premium OEM/ODM services. Small MOQ support, fast sampling, and full quality control for global brands.</p>
+        </div>
+    </section>
+    
+    <section class="products-section">
         <div class="container">
             <div class="section-title">
-                <h2>One-stop apparel manufacturing solutions</h2>
-                <p>Nicewise Textile are committed to providing our customers with high-quality textile fabrics and clothing production solutions.</p>
+                <h2>Garment Collection</h2>
+                <p>Browse our ready-to-ship and custom-order apparel</p>
             </div>
             
-            <!-- Core Services -->
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>High-quality Fabric Supply</h3>
-                    <p>Sourcing from the world's largest textile market in China, we provide ready-made, premium fabrics for both fashion apparel and home textiles.</p>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Customized Solutions</h3>
-                    <p>Backed by China's most extensive textile production supply chain, we offer professional fabric customization services tailored to specific client requirements.</p>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Garment Production Supply Chain</h3>
-                    <p>With professional garment factories in both China and Vietnam, we provide cost-effective production solutions for clients across different regions.</p>
-                </div>
+            <div class="products-grid" id="apparelGrid">
+                <div class="loading">Loading our apparel collection...</div>
             </div>
         </div>
     </section>
-    
-    <!-- Manufacturers Section -->
-    <section class="section section-light">
+
+    <section class="cta-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Our Manufacturing Partners</h2>
-                <p>Professional garment factories in China and Vietnam</p>
-            </div>
-            
-            <div class="manufacturers-grid">
-                <!-- China Manufacturer -->
-                <div class="manufacturer-card">
-                    <div class="manufacturer-image" style="font-size: 3em; font-weight: bold;">LS</div>
-                    <div class="manufacturer-info">
-                        <h3>Lishang Fashion China</h3>
-                        <p>Our China manufacturing partners offer high-quality garment production with competitive pricing. Located in major textile hubs, they provide efficient production and quick turnaround times.</p>
-                        <a href="images/Lishang Fashion Factory Profile.pdf" class="manufacturer-link" download>📄 Download Profile</a>
-                    </div>
-                </div>
-                
-                <!-- Vietnam Manufacturer -->
-                <div class="manufacturer-card">
-                    <div class="manufacturer-image" style="font-size: 3em; font-weight: bold;">VH</div>
-                    <div class="manufacturer-info">
-                        <h3>VIET HUY FACTORY</h3>
-                        <p>Our Vietnam manufacturing partners provide cost-effective solutions with excellent quality. Benefiting from favorable trade agreements, they offer competitive advantages for international markets.</p>
-                        <a href="images/VIET HUY FACTORY'S PROFILE .pdf" class="manufacturer-link" download>📄 Download Profile</a>
-                    </div>
-                </div>
-            </div>
+            <h2>Start Your Brand Today</h2>
+            <p>Ready to produce your custom collection? Contact our specialist for a quote.</p>
+            <a href="https://wa.me/8613726225654" class="cta-button">📱 Contact on WhatsApp</a>
         </div>
     </section>
-    
-    <!-- CTA Section -->
-    <section class="cta-section" id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>For more information about our services, please feel free to contact us.</p>
-            <a href="https://wa.me/8613726225654?text=Hi!%20I'm%20interested%20in%20your%20apparel%20manufacturing%20services.%20Can%20you%20provide%20more%20information?" class="cta-button" target="_blank">📱 Contact on WhatsApp</a>
-        </div>
-    </section>
-    
-    <!-- Footer -->
+
     <footer>
         <div class="container">
             <p>&copy; 2026 Nicewise Textile Solution. All rights reserved.</p>
-            <p style="margin-top: 10px;">Powered by 10+ years of textile industry expertise</p>
         </div>
     </footer>
+
+    <script>
+        async function loadApparel() {
+            const grid = document.getElementById('apparelGrid');
+            try {
+                const response = await fetch('data/apparel.json?t=' + new Date().getTime());
+                const products = await response.json();
+                
+                grid.innerHTML = products.map(p => {
+                    const isReady = p.stock_type.toLowerCase().includes('ready');
+                    const badgeBg = isReady ? 'var(--ready-color)' : 'var(--order-color)';
+                    
+                    return `
+                        <div class="product-card">
+                            <div class="stock-badge" style="background: ${badgeBg}">${p.stock_type}</div>
+                            <img src="${p.image}" alt="${p.name}" class="product-image" loading="lazy">
+                            <div class="product-info">
+                                <h3 class="product-model">${p.name}</h3>
+                                <div class="product-specs">
+                                    <div class="spec-item">
+                                        <span class="spec-label">Composition:</span>
+                                        <span class="spec-value">${p.composition}</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Size:</span>
+                                        <span class="spec-value">${p.size}</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Colors:</span>
+                                        <span class="spec-value">${p.colors}</span>
+                                    </div>
+                                </div>
+                                <p class="product-desc">${p.description}</p>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            } catch (e) {
+                grid.innerHTML = '<div class="loading">Error loading apparel.</div>';
+            }
+        }
+        window.addEventListener('DOMContentLoaded', loadApparel);
+    </script>
 </body>
 </html>
