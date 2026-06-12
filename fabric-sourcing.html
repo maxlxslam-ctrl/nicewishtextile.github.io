@@ -123,12 +123,15 @@
             margin-top: 50px;
         }
         
+        /* Product Card */
         .product-card {
             background: white;
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
         
         .product-card:hover {
@@ -145,6 +148,9 @@
         
         .product-info {
             padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
         }
         
         .product-model {
@@ -190,44 +196,15 @@
             margin-bottom: 20px;
         }
         
-        .product-action {
-            display: flex;
-            gap: 10px;
-        }
-        
-        .btn {
-            flex: 1;
-            padding: 10px 20px;
-            border-radius: 20px;
-            text-decoration: none;
+        /* Loading State */
+        .loading {
             text-align: center;
-            font-weight: 600;
-            font-size: 0.9em;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
+            padding: 40px;
+            grid-column: 1 / -1;
+            color: var(--text-light);
+            font-style: italic;
         }
-        
-        .btn-primary {
-            background: var(--secondary-color);
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            background: var(--primary-color);
-        }
-        
-        .btn-outline {
-            background: white;
-            color: var(--secondary-color);
-            border: 2px solid var(--secondary-color);
-        }
-        
-        .btn-outline:hover {
-            background: var(--secondary-color);
-            color: white;
-        }
-        
+
         /* Features Section */
         .features {
             padding: 80px 0;
@@ -292,8 +269,8 @@
         .cta-button {
             display: inline-block;
             padding: 15px 40px;
-            background: white;
-            color: var(--primary-color);
+            background: #2d3748;
+            color: white;
             text-decoration: none;
             border-radius: 30px;
             font-weight: 600;
@@ -343,7 +320,7 @@
             }
             
             .product-image {
-                height: 250px;
+                height: 350px;
             }
         }
     </style>
@@ -374,213 +351,8 @@
                 <p>Explore our premium knit fabric range</p>
             </div>
             
-            <div class="products-grid">
-                <!-- Product 1: DY613 -->
-                <div class="product-card">
-                    <img src="images/products/DY613-42.5%25%20Viscose%2034%25%20Nylon%2012.8%25%20Lyocell%201.7%25%20Silk%209%25%20Spandex-160cm-185gsm.jpg" alt="DY613 Lyocell Silk Roman Knit" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-model">DY613 - Lyocell Silk Roman Knit</h3>
-                        <div class="product-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Composition:</span>
-                                <span class="spec-value">42.5% Viscose, 34% Nylon, 12.8% Lyocell, 1.7% Silk, 9% Spandex</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Width:</span>
-                                <span class="spec-value">160cm</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Weight:</span>
-                                <span class="spec-value">185g/m²</span>
-                            </div>
-                        </div>
-                        <p class="product-desc">Luxury Lyocell-Silk Roma Knit Fabric - 185g High-End Tencel-Nylon Blend for Fashion T-Shirts & Skirts. Premium quality fabric with excellent drape and breathability.</p>
-                    </div>
-                </div>
-                
-                <!-- Product 2: DY810 -->
-                <div class="product-card">
-                    <img src="images/products/DY810-100%25%20Combed%20Cotton%20(Mercerized)-170cm-145gsm.jpg" alt="DY810 Mercerized Cotton" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-model">DY810 - Mercerized Combed Cotton</h3>
-                        <div class="product-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Composition:</span>
-                                <span class="spec-value">100% Combed Cotton (Mercerized)</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Width:</span>
-                                <span class="spec-value">170cm</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Weight:</span>
-                                <span class="spec-value">145g/m²</span>
-                            </div>
-                        </div>
-                        <p class="product-desc">Premium Mercerized Combed Cotton fabric with smooth finish and enhanced luster. Perfect for high-quality T-shirts and lightweight apparel with superior comfort.</p>
-                    </div>
-                </div>
-                
-                <!-- Product 3: DY820 -->
-                <div class="product-card">
-                    <img src="images/products/DY820-95%25%20Cotton%205%25%20Spandex%20(Mercerized)-175cm-170gsm.jpg" alt="DY820 Cotton Spandex" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-model">DY820 - Mercerized Cotton Spandex</h3>
-                        <div class="product-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Composition:</span>
-                                <span class="spec-value">95% Cotton, 5% Spandex (Mercerized)</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Width:</span>
-                                <span class="spec-value">175cm</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Weight:</span>
-                                <span class="spec-value">170g/m²</span>
-                            </div>
-                        </div>
-                        <p class="product-desc">Mercerized Cotton-Spandex blend with excellent stretch and recovery. Ideal for form-fitting apparel, sportswear, and casual wear with enhanced comfort and mobility.</p>
-                    </div>
-                </div>
-                
-                <!-- Product 4: DY822 -->
-                <div class="product-card">
-                    <img src="images/products/DY822-100%25%20Combed%20Cotton%20(Liquid%20Ammonia%20Treated)-180cm-220gsm.jpg" alt="DY822 Liquid Ammonia Cotton" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-model">DY822 - Liquid Ammonia Cotton</h3>
-                        <div class="product-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Composition:</span>
-                                <span class="spec-value">100% Combed Cotton (Liquid Ammonia Treated)</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Width:</span>
-                                <span class="spec-value">180cm</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Weight:</span>
-                                <span class="spec-value">220g/m²</span>
-                            </div>
-                        </div>
-                        <p class="product-desc">Premium Liquid Ammonia Treated Cotton with exceptional softness, durability, and color retention. Heavyweight fabric perfect for high-end fashion and premium apparel.</p>
-                    </div>
-                </div>
-                
-                <!-- Product 5: DY828 -->
-                <div class="product-card">
-                    <img src="images/products/DY828-100%25%20Combed%20Cotton%20(Mercerized)-175cm-170gsm.jpg" alt="DY828 Mercerized Cotton" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-model">DY828 - Mercerized Combed Cotton</h3>
-                        <div class="product-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Composition:</span>
-                                <span class="spec-value">100% Combed Cotton (Mercerized)</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Width:</span>
-                                <span class="spec-value">175cm</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Weight:</span>
-                                <span class="spec-value">170g/m²</span>
-                            </div>
-                        </div>
-                        <p class="product-desc">High-quality Mercerized Combed Cotton with smooth surface and enhanced strength. Versatile mid-weight fabric suitable for various apparel applications.</p>
-                    </div>
-                </div>
-                
-                <!-- Product 6: DY833 -->
-                <div class="product-card">
-                    <img src="images/products/DY833-48%25%20Modal%2048%25%20Cotton%204%25%20Spandex-175cm-170gsm.jpg" alt="DY833 Modal Cotton" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-model">DY833 - Modal Cotton Spandex</h3>
-                        <div class="product-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Composition:</span>
-                                <span class="spec-value">48% Modal, 48% Cotton, 4% Spandex</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Width:</span>
-                                <span class="spec-value">175cm</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Weight:</span>
-                                <span class="spec-value">170g/m²</span>
-                            </div>
-                        </div>
-                        <p class="product-desc">Premium Modal-Cotton-Spandex blend combining the softness of Modal, the comfort of Cotton, and the stretch of Spandex. Perfect for comfortable everyday wear and activewear.</p>
-                    </div>
-                </div>
-
-                <!-- Product 7: DY841 -->
-                <div class="product-card">
-                    <img src="images/products/DY841-93%25cotton%207%25spandex-170cm-170gsm.jpg" alt="DY841 Silky Spandex" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-model">DY841 - 80s Silky Spandex Double-Sided</h3>
-                        <div class="product-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Composition:</span>
-                                <span class="spec-value">93% Cotton, 7% Spandex</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Width:</span>
-                                <span class="spec-value">170cm</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Weight:</span>
-                                <span class="spec-value">170g/m²</span>
-                            </div>
-                        </div>
-                        <p class="product-desc">Exquisite 80s double-sided silky spandex fabric. Offers a cool, airy feel with a premium mercerized finish, perfect for high-end summer essentials.</p>
-                    </div>
-                </div>
-
-                <!-- Product 8: DY848 -->
-                <div class="product-card">
-                    <img src="images/products/DY848%20-100s%2095%25cotton5%25spandex-175cm-170gsm.jpg" alt="DY848 Silky Cotton" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-model">DY848 - Silky Cotton (100S/2)</h3>
-                        <div class="product-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Composition:</span>
-                                <span class="spec-value">100s 95% Cotton, 5% Spandex</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Width:</span>
-                                <span class="spec-value">175cm</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Weight:</span>
-                                <span class="spec-value">170g/m²</span>
-                            </div>
-                        </div>
-                        <p class="product-desc">Ultra-premium double-thread mercerized cotton single jersey. Featuring long-staple cotton for a silk-like touch, superior breathability, and lasting luster. Ideal for luxury menswear.</p>
-                    </div>
-                </div>
-
-                <!-- Product 9: DY857 -->
-                <div class="product-card">
-                    <img src="images/products/DY857-50s%20100%25%20double%20thread%20mercerized%20cotton-170cm-180gsm.jpg" alt="DY857 Premium Mercerized Cotton" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-model">DY857 - 50S/2 Premium Mercerized Cotton</h3>
-                        <div class="product-specs">
-                            <div class="spec-item">
-                                <span class="spec-label">Composition:</span>
-                                <span class="spec-value">50s 100% Double Thread Mercerized Cotton</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Width:</span>
-                                <span class="spec-value">170cm</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Weight:</span>
-                                <span class="spec-value">180g/m²</span>
-                            </div>
-                        </div>
-                        <p class="product-desc">High-grade double-thread mercerized cotton with a structured yet soft handfeel. Designed for premium durability and a sophisticated finish, suitable for year-round luxury basics.</p>
-                    </div>
-                </div>
+            <div class="products-grid" id="productsGrid">
+                <div class="loading">Loading our latest fabric collection...</div>
             </div>
         </div>
     </section>
@@ -629,5 +401,56 @@
             <p style="margin-top: 10px;">Powered by 10+ years of textile industry expertise</p>
         </div>
     </footer>
+
+    <!-- Data Engine -->
+    <script>
+        async function loadProducts() {
+            const grid = document.getElementById('productsGrid');
+            try {
+                // Fetch data with a cache-buster for immediate updates
+                const response = await fetch('data/fabrics.json?t=' + new Date().getTime());
+                if (!response.ok) throw new Error('Data fetch failed');
+                
+                const products = await response.json();
+                
+                if (products.length === 0) {
+                    grid.innerHTML = '<div class="loading">No products available at the moment.</div>';
+                    return;
+                }
+
+                // Render products
+                grid.innerHTML = products.map(product => `
+                    <div class="product-card">
+                        <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+                        <div class="product-info">
+                            <h3 class="product-model">${product.id} - ${product.name}</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Composition:</span>
+                                    <span class="spec-value">${product.composition}</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Width:</span>
+                                    <span class="spec-value">${product.width}</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Weight:</span>
+                                    <span class="spec-value">${product.weight}</span>
+                                </div>
+                            </div>
+                            <p class="product-desc">${product.description}</p>
+                        </div>
+                    </div>
+                `).join('');
+
+            } catch (error) {
+                console.error('Error loading products:', error);
+                grid.innerHTML = '<div class="loading">Sorry, could not load products. Please refresh the page.</div>';
+            }
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', loadProducts);
+    </script>
 </body>
 </html>
