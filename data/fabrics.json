@@ -1,0 +1,83 @@
+[
+  {
+    "id": "DY613",
+    "name": "Lyocell Silk Roman Knit",
+    "composition": "42.5% Viscose, 34% Nylon, 12.8% Lyocell, 1.7% Silk, 9% Spandex",
+    "width": "160cm",
+    "weight": "185g/m²",
+    "image": "images/products/DY613-42.5%25%20Viscose%2034%25%20Nylon%2012.8%25%20Lyocell%201.7%25%20Silk%209%25%20Spandex-160cm-185gsm.jpg",
+    "description": "Luxury Lyocell-Silk Roma Knit Fabric - 185g High-End Tencel-Nylon Blend for Fashion T-Shirts & Skirts. Premium quality fabric with excellent drape and breathability."
+  },
+  {
+    "id": "DY810",
+    "name": "Mercerized Combed Cotton",
+    "composition": "100% Combed Cotton (Mercerized)",
+    "width": "170cm",
+    "weight": "145g/m²",
+    "image": "images/products/DY810-100%25%20Combed%20Cotton%20(Mercerized)-170cm-145gsm.jpg",
+    "description": "Premium Mercerized Combed Cotton fabric with smooth finish and enhanced luster. Perfect for high-quality T-shirts and lightweight apparel with superior comfort."
+  },
+  {
+    "id": "DY820",
+    "name": "Mercerized Cotton Spandex",
+    "composition": "95% Cotton, 5% Spandex (Mercerized)",
+    "width": "175cm",
+    "weight": "170g/m²",
+    "image": "images/products/DY820-95%25%20Cotton%205%25%20Spandex%20(Mercerized)-175cm-170gsm.jpg",
+    "description": "Mercerized Cotton-Spandex blend with excellent stretch and recovery. Ideal for form-fitting apparel, sportswear, and casual wear with enhanced comfort and mobility."
+  },
+  {
+    "id": "DY822",
+    "name": "Liquid Ammonia Cotton",
+    "composition": "100% Combed Cotton (Liquid Ammonia Treated)",
+    "width": "180cm",
+    "weight": "220g/m²",
+    "image": "images/products/DY822-100%25%20Combed%20Cotton%20(Liquid%20Ammonia%20Treated)-180cm-220gsm.jpg",
+    "description": "Premium Liquid Ammonia Treated Cotton with exceptional softness, durability, and color retention. Heavyweight fabric perfect for high-end fashion and premium apparel."
+  },
+  {
+    "id": "DY828",
+    "name": "Mercerized Combed Cotton",
+    "composition": "100% Combed Cotton (Mercerized)",
+    "width": "175cm",
+    "weight": "170g/m²",
+    "image": "images/products/DY828-100%25%20Combed%20Cotton%20(Mercerized)-175cm-170gsm.jpg",
+    "description": "High-quality Mercerized Combed Cotton with smooth surface and enhanced strength. Versatile mid-weight fabric suitable for various apparel applications."
+  },
+  {
+    "id": "DY833",
+    "name": "Modal Cotton Spandex",
+    "composition": "48% Modal, 48% Cotton, 4% Spandex",
+    "width": "175cm",
+    "weight": "170g/m²",
+    "image": "images/products/DY833-48%25%20Modal%2048%25%20Cotton%204%25%20Spandex-175cm-170gsm.jpg",
+    "description": "Premium Modal-Cotton-Spandex blend combining the softness of Modal, the comfort of Cotton, and the stretch of Spandex. Perfect for comfortable everyday wear and activewear."
+  },
+  {
+    "id": "DY841",
+    "name": "80s Silky Spandex Double-Sided",
+    "composition": "93% Cotton, 7% Spandex",
+    "width": "170cm",
+    "weight": "170g/m²",
+    "image": "images/products/DY841-93%25cotton%207%25spandex-170cm-170gsm.jpg",
+    "description": "Exquisite 80s double-sided silky spandex fabric. Offers a cool, airy feel with a premium mercerized finish, perfect for high-end summer essentials."
+  },
+  {
+    "id": "DY848",
+    "name": "Silky Cotton (100S/2)",
+    "composition": "100s 95% Cotton, 5% Spandex",
+    "width": "175cm",
+    "weight": "170g/m²",
+    "image": "images/products/DY848%20-100s%2095%25cotton5%25spandex-175cm-170gsm.jpg",
+    "description": "Ultra-premium double-thread mercerized cotton single jersey. Featuring long-staple cotton for a silk-like touch, superior breathability, and lasting luster. Ideal for luxury menswear."
+  },
+  {
+    "id": "DY857",
+    "name": "50S/2 Premium Mercerized Cotton",
+    "composition": "50s 100% Double Thread Mercerized Cotton",
+    "width": "170cm",
+    "weight": "180g/m²",
+    "image": "images/products/DY857-50s%20100%25%20double%20thread%20mercerized%20cotton-170cm-180gsm.jpg",
+    "description": "High-grade double-thread mercerized cotton with a structured yet soft handfeel. Designed for premium durability and a sophisticated finish, suitable for year-round luxury basics."
+  }
+]
