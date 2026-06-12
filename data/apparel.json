@@ -1,0 +1,32 @@
+[
+  {
+    "id": "AP-T01",
+    "name": "Premium Heavyweight Oversized T-Shirt",
+    "composition": "100% Combed Cotton, 260GSM",
+    "size": "S, M, L, XL, XXL",
+    "colors": "Black, White, Sage Green, Navy",
+    "stock_type": "Ready to Ship",
+    "image": "images/apparel picture.png",
+    "description": "Our signature heavyweight tee featuring a structured drop-shoulder fit. Made from premium liquid ammonia treated cotton for ultimate comfort and durability."
+  },
+  {
+    "id": "AP-P02",
+    "name": "Classic Mercerized Cotton Polo",
+    "composition": "100% Mercerized Cotton, 200GSM",
+    "size": "M, L, XL, 3XL",
+    "colors": "Royal Blue, Charcoal, Burgundy",
+    "stock_type": "Made to Order (MOQ 50pcs)",
+    "image": "images/Apparel images.png",
+    "description": "High-end mercerized polo with a subtle silk-like luster. Perfect for corporate branding or premium lifestyle collections."
+  },
+  {
+    "id": "AP-H03",
+    "name": "French Terry Relaxed Hoodie",
+    "composition": "80% Cotton, 20% Polyester, 400GSM",
+    "size": "One Size / Custom",
+    "colors": "Heather Grey, Cream, Earth Brown",
+    "stock_type": "Ready to Ship",
+    "image": "images/apparel picture.png",
+    "description": "Thick and cozy French Terry hoodie with a modern relaxed silhouette. Features premium ribbing and a clean, minimalist design."
+  }
+]
