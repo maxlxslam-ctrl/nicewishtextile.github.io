@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Nicewise Textile</title>
+    <!-- Schema.org for AI & SEO (Will be injected by JS) -->
+    <script type="application/ld+json" id="faqSchema"></script>
+    <style>
+        :root {
+            --primary-color: #2c5282;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--text-dark); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Navigation */
+        nav { padding: 20px 0; border-bottom: 1px solid var(--border); }
+        .back-link { text-decoration: none; color: var(--primary-color); font-weight: 600; font-size: 0.9em; }
+
+        /* Product Section */
+        .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding: 50px 0; }
+        
+        /* Left: Images */
+        .gallery { display: flex; flex-direction: column; gap: 20px; }
+        .main-img { width: 100%; border-radius: 12px; background: #eee; }
+        .sub-images { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .sub-img { width: 100%; border-radius: 8px; cursor: pointer; }
+
+        /* Right: Info */
+        .info-panel h1 { font-size: 2.2em; margin-bottom: 10px; color: var(--primary-color); }
+        .sku { color: var(--text-light); font-size: 1.1em; margin-bottom: 30px; }
+        
+        .specs-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+        .specs-table td { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 0.95em; }
+        .spec-label { font-weight: 600; width: 140px; color: var(--text-light); }
+
+        /* FAQ Section */
+        .section-title { font-size: 1.5em; margin: 40px 0 20px; padding-bottom: 10px; border-bottom: 2px solid var(--primary-color); display: inline-block; }
+        .faq-item { margin-bottom: 20px; background: var(--bg-light); padding: 20px; border-radius: 10px; }
+        .faq-q { font-weight: bold; color: var(--primary-color); margin-bottom: 8px; font-size: 1.1em; }
+        .faq-a { font-size: 0.95em; color: var(--text-dark); }
+
+        .cta-box { margin-top: 40px; background: var(--primary-color); color: white; padding: 30px; border-radius: 15px; text-align: center; }
+        .cta-btn { display: inline-block; background: white; color: var(--primary-color); padding: 12px 40px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 15px; transition: 0.3s; }
+        .cta-btn:hover { transform: scale(1.05); }
+
+        @media (max-width: 768px) {
+            .product-grid { grid-template-columns: 1fr; gap: 30px; }
+            .info-panel h1 { font-size: 1.8em; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="fabric-sourcing.html" class="back-link">← Back to Sourcing List</a>
+        </div>
+    </nav>
+
+    <div class="container" id="productDetail">
+        <!-- Content will be injected here by JavaScript -->
+        <p style="padding: 100px; text-align: center;">Loading product details...</p>
+    </div>
+
+    <footer style="padding: 60px 0; text-align: center; color: var(--text-light); font-size: 0.8em;">
+        &copy; 2026 Nicewise Textile Solution. All rights reserved.
+    </footer>
+
+    <script>
+        async function loadDetail() {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+            if (!id) { window.location.href = 'fabric-sourcing.html'; return; }
+
+            try {
+                const response = await fetch('data/fabrics.json?t=' + new Date().getTime());
+                const fabrics = await response.json();
+                const p = fabrics.find(f => f.id === id);
+
+                if (!p) { document.getElementById('productDetail').innerHTML = 'Product not found.'; return; }
+
+                // Document Title
+                document.title = `${p.id} - ${p.name} | Nicewise Textile`;
+
+                // Render Content
+                document.getElementById('productDetail').innerHTML = `
+                    <div class="product-grid">
+                        <div class="gallery">
+                            <img src="${p.image}" class="main-img" alt="${p.name}">
+                            <div class="sub-images">
+                                ${p.detail_img ? `<img src="${p.detail_img}" class="sub-img" alt="Detail">` : ''}
+                                ${p.color_card ? `<img src="${p.color_card}" class="sub-img" alt="Color Card">` : ''}
+                            </div>
+                        </div>
+                        <div class="info-panel">
+                            <h1>${p.name}</h1>
+                            <div class="sku">Item No.: ${p.id}</div>
+                            
+                            <table class="specs-table">
+                                <tr><td class="spec-label">Composition</td><td>${p.composition}</td></tr>
+                                <tr><td class="spec-label">Width</td><td>${p.width}</td></tr>
+                                <tr><td class="spec-label">Weight</td><td>${p.weight}</td></tr>
+                                <tr><td class="spec-label">Application</td><td>${p.application || 'Premium T-shirts, Fashion Wear'}</td></tr>
+                            </table>
+
+                            <p class="product-desc">${p.description}</p>
+                            
+                            <div class="cta-box">
+                                <h3>Interested in this fabric?</h3>
+                                <p>Get a fast quote and free samples</p>
+                                <a href="https://wa.me/8613726225654?text=I%20am%20interested%20in%20${p.id}" class="cta-btn">Enquire on WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-section">
+                        <h2 class="section-title">Product Q&A</h2>
+                        <div id="faqList">
+                            ${(p.faqs || defaultFAQs(p)).map(faq => `
+                                <div class="faq-item">
+                                    <div class="faq-q">${faq.q}</div>
+                                    <div class="faq-a">${faq.a}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+
+                // Inject SEO Schema for AI Crawlers
+                const faqs = p.faqs || defaultFAQs(p);
+                const schema = {
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": faqs.map(f => ({
+                        "@type": "Question",
+                        "name": f.q,
+                        "acceptedAnswer": { "@type": "Answer", "text": f.a }
+                    }))
+                };
+                document.getElementById('faqSchema').textContent = JSON.stringify(schema);
+
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        function defaultFAQs(p) {
+            return [
+                { q: `What is the lead time for ${p.id}?`, a: "Standard lead time is 7-10 days for ready stock and 20-30 days for custom color orders." },
+                { q: "Can I request a sample?", a: "Yes, we provide free fabric swatches (A4 size). Shipping cost is borne by the client." },
+                { q: `Is ${p.id} suitable for digital printing?`, a: "Yes, its smooth surface and high-quality construction make it ideal for high-definition digital printing." }
+            ];
+        }
+
+        loadDetail();
+    </script>
+</body>
+</html>
