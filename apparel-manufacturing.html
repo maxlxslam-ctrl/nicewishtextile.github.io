@@ -210,6 +210,10 @@
         <div class="container">
             <div class="filter-container">
                 <div class="filter-group">
+                    <label class="filter-label">Search:</label>
+                    <input type="text" class="filter-select" id="searchInput" placeholder="Search by name or desc...">
+                </div>
+                <div class="filter-group">
                     <label class="filter-label">Product Style:</label>
                     <select class="filter-select" id="styleFilter">
                         <option value="all">All Styles</option>
@@ -262,6 +266,7 @@
                 renderProducts(allApparel);
                 
                 // Add Listeners
+                document.getElementById('searchInput').addEventListener('input', applyFilters);
                 document.getElementById('styleFilter').addEventListener('change', applyFilters);
                 document.getElementById('stockFilter').addEventListener('change', applyFilters);
 
@@ -282,13 +287,18 @@
         }
 
         function applyFilters() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
             const style = document.getElementById('styleFilter').value;
             const stock = document.getElementById('stockFilter').value;
             
             const filtered = allApparel.filter(p => {
+                const searchMatch = !searchTerm || 
+                                   p.name.toLowerCase().includes(searchTerm) || 
+                                   p.description.toLowerCase().includes(searchTerm);
                 const styleMatch = (style === 'all' || p.style === style);
                 const stockMatch = (stock === 'all' || p.stock_type === stock);
-                return styleMatch && stockMatch;
+                
+                return searchMatch && styleMatch && stockMatch;
             });
             
             renderProducts(filtered);
