@@ -41,7 +41,15 @@
     "weight": "220g/m²",
     "weight_tag": "205gsm - 260gsm",
     "image": "images/products/DY822-100%25%20Combed%20Cotton%20(Liquid%20Ammonia%20Treated)-180cm-220gsm.jpg",
-    "description": "Premium Liquid Ammonia Treated Cotton with exceptional softness and durability."
+    "detail_img": "images/products/DY822-detail.jpg",
+    "color_card": "images/products/DY822-colors.jpg",
+    "application": "High-end T-shirts, Polo shirts, Boutique fashion",
+    "description": "Our premium Liquid Ammonia Treated Cotton offers a soft, skin-friendly texture with exceptional luster and durability. It provides superior wrinkle resistance and maintains its shape and color after multiple washes. Perfect for high-end fashion brands seeking premium handfeel.",
+    "faqs": [
+      { "q": "What is Liquid Ammonia Treatment?", "a": "It is a finishing process that improves fabric luster, handfeel, and wrinkle resistance by treating cotton fibers with liquid ammonia at low temperatures." },
+      { "q": "Is this fabric pre-shrunk?", "a": "Yes, our fabric undergoes professional pre-shrinking treatment. Residual shrinkage is typically below 3%." },
+      { "q": "Can I customize the color?", "a": "Absolutely! We offer lab-dip services. Custom dyeing takes approximately 15-20 days." }
+    ]
   },
   {
     "id": "DY828",
