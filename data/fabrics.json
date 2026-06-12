@@ -17,7 +17,7 @@
     "comp_tag": "100% Cotton",
     "width": "170cm",
     "weight": "145g/m²",
-    "weight_tag": "Below 150gsm",
+    "weight_tag": "150gsm below",
     "image": "images/products/DY810-100%25%20Combed%20Cotton%20(Mercerized)-170cm-145gsm.jpg",
     "description": "Premium Mercerized Combed Cotton fabric with smooth finish and enhanced luster."
   },
@@ -127,7 +127,7 @@
     "comp_tag": "Nylon Cotton Blend",
     "width": "170cm",
     "weight": "120g/m²",
-    "weight_tag": "Below 150gsm",
+    "weight_tag": "150gsm below",
     "image": "images/products/DY901-76%25Nylon%2024%25cotton-170cm-120gsm.jpg",
     "description": "Lightweight cotton-nylon blend with a unique linen-like twill texture."
   }
