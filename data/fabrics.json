@@ -3,108 +3,132 @@
     "id": "DY613",
     "name": "Lyocell Silk Roman Knit",
     "composition": "42.5% Viscose, 34% Nylon, 12.8% Lyocell, 1.7% Silk, 9% Spandex",
+    "comp_tag": "Lyocell Silk Blend",
     "width": "160cm",
     "weight": "185g/m²",
+    "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY613-42.5%25%20Viscose%2034%25%20Nylon%2012.8%25%20Lyocell%201.7%25%20Silk%209%25%20Spandex-160cm-185gsm.jpg",
-    "description": "Luxury Lyocell-Silk Roma Knit Fabric - 185g High-End Tencel-Nylon Blend for Fashion T-Shirts & Skirts. Premium quality fabric with excellent drape and breathability."
+    "description": "Luxury Lyocell-Silk Roma Knit Fabric - 185g High-End Tencel-Nylon Blend for Fashion T-Shirts & Skirts."
   },
   {
     "id": "DY810",
     "name": "Mercerized Combed Cotton",
     "composition": "100% Combed Cotton (Mercerized)",
+    "comp_tag": "100% Cotton",
     "width": "170cm",
     "weight": "145g/m²",
+    "weight_tag": "Below 150gsm",
     "image": "images/products/DY810-100%25%20Combed%20Cotton%20(Mercerized)-170cm-145gsm.jpg",
-    "description": "Premium Mercerized Combed Cotton fabric with smooth finish and enhanced luster. Perfect for high-quality T-shirts and lightweight apparel with superior comfort."
+    "description": "Premium Mercerized Combed Cotton fabric with smooth finish and enhanced luster."
   },
   {
     "id": "DY820",
     "name": "Mercerized Cotton Spandex",
     "composition": "95% Cotton, 5% Spandex (Mercerized)",
+    "comp_tag": "Cotton Spandex",
     "width": "175cm",
     "weight": "170g/m²",
+    "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY820-95%25%20Cotton%205%25%20Spandex%20(Mercerized)-175cm-170gsm.jpg",
-    "description": "Mercerized Cotton-Spandex blend with excellent stretch and recovery. Ideal for form-fitting apparel, sportswear, and casual wear with enhanced comfort and mobility."
+    "description": "Mercerized Cotton-Spandex blend with excellent stretch and recovery."
   },
   {
     "id": "DY822",
     "name": "Liquid Ammonia Cotton",
     "composition": "100% Combed Cotton (Liquid Ammonia Treated)",
+    "comp_tag": "100% Cotton",
     "width": "180cm",
     "weight": "220g/m²",
+    "weight_tag": "205gsm - 260gsm",
     "image": "images/products/DY822-100%25%20Combed%20Cotton%20(Liquid%20Ammonia%20Treated)-180cm-220gsm.jpg",
-    "description": "Premium Liquid Ammonia Treated Cotton with exceptional softness, durability, and color retention. Heavyweight fabric perfect for high-end fashion and premium apparel."
+    "description": "Premium Liquid Ammonia Treated Cotton with exceptional softness and durability."
   },
   {
     "id": "DY828",
     "name": "Mercerized Combed Cotton",
     "composition": "100% Combed Cotton (Mercerized)",
+    "comp_tag": "100% Cotton",
     "width": "175cm",
     "weight": "170g/m²",
+    "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY828-100%25%20Combed%20Cotton%20(Mercerized)-175cm-170gsm.jpg",
-    "description": "High-quality Mercerized Combed Cotton with smooth surface and enhanced strength. Versatile mid-weight fabric suitable for various apparel applications."
+    "description": "High-quality Mercerized Combed Cotton with smooth surface and enhanced strength."
   },
   {
     "id": "DY833",
     "name": "Modal Cotton Spandex",
     "composition": "48% Modal, 48% Cotton, 4% Spandex",
+    "comp_tag": "Modal Cotton Spandex",
     "width": "175cm",
     "weight": "170g/m²",
+    "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY833-48%25%20Modal%2048%25%20Cotton%204%25%20Spandex-175cm-170gsm.jpg",
-    "description": "Premium Modal-Cotton-Spandex blend combining the softness of Modal, the comfort of Cotton, and the stretch of Spandex. Perfect for comfortable everyday wear and activewear."
+    "description": "Premium Modal-Cotton-Spandex blend combining softness and stretch."
   },
   {
     "id": "DY841",
     "name": "80s Silky Spandex Double-Sided",
     "composition": "93% Cotton, 7% Spandex",
+    "comp_tag": "Cotton Spandex",
     "width": "170cm",
     "weight": "170g/m²",
+    "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY841-93%25cotton%207%25spandex-170cm-170gsm.jpg",
-    "description": "Exquisite 80s double-sided silky spandex fabric. Offers a cool, airy feel with a premium mercerized finish, perfect for high-end summer essentials."
+    "description": "Exquisite 80s double-sided silky spandex fabric with a premium finish."
   },
   {
     "id": "DY848",
     "name": "Silky Cotton (100S/2)",
     "composition": "100s 95% Cotton, 5% Spandex",
+    "comp_tag": "Cotton Spandex",
     "width": "175cm",
     "weight": "170g/m²",
+    "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY848%20-100s%2095%25cotton5%25spandex-175cm-170gsm.jpg",
-    "description": "Ultra-premium double-thread mercerized cotton single jersey. Featuring long-staple cotton for a silk-like touch, superior breathability, and lasting luster. Ideal for luxury menswear."
+    "description": "Ultra-premium double-thread mercerized cotton single jersey with lasting luster."
   },
   {
     "id": "DY857",
     "name": "50S/2 Premium Mercerized Cotton",
     "composition": "50s 100% Double Thread Mercerized Cotton",
+    "comp_tag": "100% Cotton",
     "width": "170cm",
     "weight": "180g/m²",
+    "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY857-50s%20100%25%20double%20thread%20mercerized%20cotton-170cm-180gsm.jpg",
-    "description": "High-grade double-thread mercerized cotton with a structured yet soft handfeel. Designed for premium durability and a sophisticated finish, suitable for year-round luxury basics."
+    "description": "High-grade double-thread mercerized cotton with a structured yet soft handfeel."
   },
   {
     "id": "DY899",
     "name": "Ammonia Liquid Single-Sided",
     "composition": "100% Combed Cotton (Liquid Ammonia Treated)",
+    "comp_tag": "100% Cotton",
     "width": "180cm",
     "weight": "210g/m²",
+    "weight_tag": "205gsm - 260gsm",
     "image": "images/products/DY899-100%25%20Liquid%20Ammonia%20cotton-180cm-210gsm.jpg",
-    "description": "High-performance liquid ammonia treated single-sided cotton. Features superior smoothness, wrinkle resistance, and a refined texture for premium polo shirts and activewear."
+    "description": "High-performance liquid ammonia treated single-sided cotton with wrinkle resistance."
   },
   {
     "id": "DY900",
     "name": "European-style Mercerized Cotton",
     "composition": "50% Cotton, 50% Modal (Mercerized)",
+    "comp_tag": "Modal Cotton Blend",
     "width": "170cm",
     "weight": "185g/m²",
+    "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY900-50%25cotton%2050%25modal-170cm-185gsm.jpg",
-    "description": "Elegant European-style blend of mercerized cotton and modal. Offers a silky luster, exceptional softness, and a cooling touch. Perfect for high-end fashion T-shirts."
+    "description": "Elegant European-style blend of mercerized cotton and modal with silky luster."
   },
   {
     "id": "DY901",
     "name": "Cotton-Linen Twill Jersey",
     "composition": "76% Nylon, 24% Cotton (Linen-touch Twill)",
+    "comp_tag": "Nylon Cotton Blend",
     "width": "170cm",
     "weight": "120g/m²",
+    "weight_tag": "Below 150gsm",
     "image": "images/products/DY901-76%25Nylon%2024%25cotton-170cm-120gsm.jpg",
-    "description": "Lightweight cotton-nylon blend with a unique linen-like twill texture. Combines the natural look of linen with the durability of nylon, ideal for breathable summer garments."
+    "description": "Lightweight cotton-nylon blend with a unique linen-like twill texture."
   }
 ]
