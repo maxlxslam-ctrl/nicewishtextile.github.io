@@ -2,6 +2,7 @@
   {
     "id": "AP-T01",
     "name": "Premium Heavyweight Oversized T-Shirt",
+    "style": "T-Shirt",
     "composition": "100% Combed Cotton, 260GSM",
     "size": "S, M, L, XL, XXL",
     "colors": "Black, White, Sage Green, Navy",
@@ -12,16 +13,18 @@
   {
     "id": "AP-P02",
     "name": "Classic Mercerized Cotton Polo",
+    "style": "Polo",
     "composition": "100% Mercerized Cotton, 200GSM",
     "size": "M, L, XL, 3XL",
     "colors": "Royal Blue, Charcoal, Burgundy",
-    "stock_type": "Made to Order (MOQ 50pcs)",
+    "stock_type": "Made to Order",
     "image": "images/Apparel images.png",
     "description": "High-end mercerized polo with a subtle silk-like luster. Perfect for corporate branding or premium lifestyle collections."
   },
   {
     "id": "AP-H03",
     "name": "French Terry Relaxed Hoodie",
+    "style": "Hoodie",
     "composition": "80% Cotton, 20% Polyester, 400GSM",
     "size": "One Size / Custom",
     "colors": "Heather Grey, Cream, Earth Brown",
