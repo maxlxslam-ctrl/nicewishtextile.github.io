@@ -330,5 +330,62 @@
     "detail_img": "images/products/YSG2245-detail-1.jpeg",
     "color_card": "images/products/YSG2245-swatch-1.jpeg",
     "design_img": "images/products/YSG2245-design-1.jpeg"
+  },
+  {
+    "id": "YSG1018",
+    "name": "Tencel Lyocell Cotton Spandex Single Jersey",
+    "composition": "47.5% Lyocell, 47.5% Cotton, 5% Spandex",
+    "comp_tag": "Lyocell Cotton Spandex",
+    "width": "180cm",
+    "weight": "170g/m²",
+    "weight_tag": "",
+    "image": "images/products/YSG1018-main.jpg",
+    "detail_img": "images/products/YSG1018-detail-1.jpg",
+    "color_card": "images/products/YSG1018-swatch-1.jpg",
+    "description": "Premium Tencel Lyocell and cotton blend single jersey fabric with a touch of spandex for excellent stretch and recovery. Features a silky smooth handfeel, superior breathability, and natural moisture-wicking properties. Perfect for high-end T-shirts and lightweight fashion apparel.",
+    "application": "Premium T-shirts, lightweight tops, children's wear, loungewear"
+  },
+  {
+    "id": "YSG1023",
+    "name": "Lyocell Wool Blend Rib Knit Fabric",
+    "composition": "85% Lyocell, 10% Wool, 5% Spandex",
+    "comp_tag": "Lyocell Wool Blend",
+    "width": "185CM",
+    "weight": "170g/m²",
+    "weight_tag": "",
+    "image": "images/products/YSG1023-main.jpg",
+    "detail_img": "images/products/YSG1023-detail-1.jpg",
+    "color_card": "images/products/YSG1023-swatch-1.jpg",
+    "description": "A sophisticated blend of eco-friendly Lyocell and premium wool, this rib knit fabric offers a unique combination of silk-like softness and natural warmth. The spandex inclusion ensures great shape retention. Ideal for elegant knitwear and layering pieces.",
+    "application": "Fashionable T-shirts, cardigans, base layers, dresses, children's wear"
+  },
+  {
+    "id": "YSH6915",
+    "name": "Crinkle Textured Knit Fabric",
+    "composition": "79% Polyester, 19% Rayon, 2% Spandex",
+    "comp_tag": "Poly Rayon Spandex",
+    "width": "160cm",
+    "weight": "250g/m²",
+    "weight_tag": "",
+    "image": "images/products/YSH6915-main.jpg",
+    "detail_img": "images/products/YSH6915-detail-1.jpg",
+    "color_card": "images/products/YSH6915-swatch-1.jpg",
+    "description": "This unique knit fabric features a stylish crinkle texture, providing a distinct three-dimensional visual effect and a modern, tactile feel. The polyester-rayon blend offers durability and a soft drape, while the spandex adds comfortable stretch. Perfect for creating standout fashion pieces with a textured look.",
+    "application": "Fashion T-shirts, dresses, skirts, boutique apparel",
+    "design_img": "images/products/YSH6915-design-1.jpg"
+  },
+  {
+    "id": "YSH6917",
+    "name": "Textured Poly-Cotton Sweatshirt Fabric",
+    "composition": "80% Polyester, 17% Cotton, 3% Spandex",
+    "comp_tag": "Poly Cotton Spandex",
+    "width": "160cm",
+    "weight": "250g/m²",
+    "weight_tag": "",
+    "image": "images/products/YSH6917-main.jpg",
+    "detail_img": "images/products/YSH6917-detail-1.jpg",
+    "color_card": "images/products/YSH6917-swatch-1.jpg",
+    "description": "A high-performance jacquard knit with a sophisticated texture, engineered for both style and comfort. This moisture-wicking poly-cotton blend is ideal for modern sweatshirts and active lifestyle wear, offering a premium handfeel and excellent durability.",
+    "application": "Fashionable sweatshirts, hoodies, Polo shirts, premium T-shirts"
   }
 ]
