@@ -8,7 +8,11 @@
     "colors": "White, Green, Black, Beige, Orange Red",
     "stock_type": "Ready to Ship",
     "image": "images/apparel/AP-C01-main.jpg",
-    "description": "A breezy summer-ready two-piece set featuring a relaxed-shoulder printed top and matching pants in a playful polka dot pattern. Crafted from 4-way stretch fabric for all-day comfort, with lantern sleeves and a flattering drape. Designed for the European and American market with easy, effortless styling."
+    "description": "A breezy summer-ready two-piece set featuring a relaxed-shoulder printed top and matching pants in a playful polka dot pattern. Crafted from 4-way stretch fabric for all-day comfort, with lantern sleeves and a flattering drape. Designed for the European and American market with easy, effortless styling.",
+    "supplier": "广州越达服装有限公司",
+    "source_url": "https://detail.1688.com/offer/799768803712.html",
+    "offer_id": "799768803712",
+    "price_cny": 56.91
   },
   {
     "id": "AP-C02",
@@ -19,7 +23,11 @@
     "colors": "Leopard Print",
     "stock_type": "Ready to Ship",
     "image": "images/apparel/AP-C02-main.jpg",
-    "description": "A statement longline leopard print coat with a refined, elegant silhouette. Hand-finished details, a notch collar and relaxed open front make it perfect for layering over knitwear. A versatile piece that elevates casual and office looks alike."
+    "description": "A statement longline leopard print coat with a refined, elegant silhouette. Hand-finished details, a notch collar and relaxed open front make it perfect for layering over knitwear. A versatile piece that elevates casual and office looks alike.",
+    "supplier": "广州鑫烨轩服饰有限公司",
+    "source_url": "https://detail.1688.com/offer/956335953971.html",
+    "offer_id": "956335953971",
+    "price_cny": 69.0
   },
   {
     "id": "AP-C03",
@@ -30,7 +38,11 @@
     "colors": "Pink, Beige, Coffee",
     "stock_type": "Ready to Ship",
     "image": "images/apparel/AP-C03-main.jpg",
-    "description": "A sharp, tailored single-button blazer in a soft wool-blend fabric with a slim, flattering cut. The classic notch lapel and mid-length silhouette make it a wardrobe essential for polished office wear and smart casual outfits."
+    "description": "A sharp, tailored single-button blazer in a soft wool-blend fabric with a slim, flattering cut. The classic notch lapel and mid-length silhouette make it a wardrobe essential for polished office wear and smart casual outfits.",
+    "supplier": "广州鑫烨轩服饰有限公司",
+    "source_url": "https://detail.1688.com/offer/947790899239.html",
+    "offer_id": "947790899239",
+    "price_cny": 59.0
   },
   {
     "id": "AP-C04",
@@ -41,7 +53,11 @@
     "colors": "Black",
     "stock_type": "Ready to Ship",
     "image": "images/apparel/AP-C04-main.jpg",
-    "description": "An easy, oversized hooded jacket with a clean zip front and functional pockets. Lightweight and mid-weight for transitional seasons, this minimalist piece pairs effortlessly with tees, joggers and denim for an off-duty casual look."
+    "description": "An easy, oversized hooded jacket with a clean zip front and functional pockets. Lightweight and mid-weight for transitional seasons, this minimalist piece pairs effortlessly with tees, joggers and denim for an off-duty casual look.",
+    "supplier": "广州鑫烨轩服饰有限公司",
+    "source_url": "https://detail.1688.com/offer/961216318787.html",
+    "offer_id": "961216318787",
+    "price_cny": 49.0
   },
   {
     "id": "AP-C05",
@@ -52,6 +68,10 @@
     "colors": "Grey, Rose, Red, Camel, Black",
     "stock_type": "Ready to Ship",
     "image": "images/apparel/AP-C05-main.jpg",
-    "description": "A cozy chenille cardigan with a hooded collar and zip front, cut in a relaxed straight fit. Soft, plush and machine-washable, it delivers comfort and warmth for autumn layering — available in five versatile colors."
+    "description": "A cozy chenille cardigan with a hooded collar and zip front, cut in a relaxed straight fit. Soft, plush and machine-washable, it delivers comfort and warmth for autumn layering — available in five versatile colors.",
+    "supplier": "东莞市麦维斯服饰有限公司",
+    "source_url": "https://detail.1688.com/offer/822998581612.html",
+    "offer_id": "822998581612",
+    "price_cny": 46.0
   }
 ]
