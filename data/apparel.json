@@ -1,35 +1,57 @@
 [
   {
-    "id": "AP-T01",
-    "name": "Premium Heavyweight Oversized T-Shirt",
-    "style": "T-Shirt",
-    "composition": "100% Combed Cotton, 260GSM",
+    "id": "AP-C01",
+    "name": "Polka Dot 2-Piece Casual Lounge Set",
+    "style": "2-Piece Set",
+    "composition": "90-95% Polyester, <30% Spandex (4-Way Stretch)",
+    "size": "S, M, L, XL, 2XL, 3XL",
+    "colors": "White, Green, Black, Beige, Orange Red",
+    "stock_type": "Ready to Ship",
+    "image": "images/apparel/AP-C01-main.jpg",
+    "description": "A breezy summer-ready two-piece set featuring a relaxed-shoulder printed top and matching pants in a playful polka dot pattern. Crafted from 4-way stretch fabric for all-day comfort, with lantern sleeves and a flattering drape. Designed for the European and American market with easy, effortless styling."
+  },
+  {
+    "id": "AP-C02",
+    "name": "Elegant Leopard Print Longline Coat",
+    "style": "Coat / Jacket",
+    "composition": "Premium Textured Blend, Mid-Weight",
     "size": "S, M, L, XL, XXL",
-    "colors": "Black, White, Sage Green, Navy",
+    "colors": "Leopard Print",
     "stock_type": "Ready to Ship",
-    "image": "images/apparel picture.png",
-    "description": "Our signature heavyweight tee featuring a structured drop-shoulder fit. Made from premium liquid ammonia treated cotton for ultimate comfort and durability."
+    "image": "images/apparel/AP-C02-main.jpg",
+    "description": "A statement longline leopard print coat with a refined, elegant silhouette. Hand-finished details, a notch collar and relaxed open front make it perfect for layering over knitwear. A versatile piece that elevates casual and office looks alike."
   },
   {
-    "id": "AP-P02",
-    "name": "Classic Mercerized Cotton Polo",
-    "style": "Polo",
-    "composition": "100% Mercerized Cotton, 200GSM",
-    "size": "M, L, XL, 3XL",
-    "colors": "Royal Blue, Charcoal, Burgundy",
-    "stock_type": "Made to Order",
-    "image": "images/Apparel images.png",
-    "description": "High-end mercerized polo with a subtle silk-like luster. Perfect for corporate branding or premium lifestyle collections."
+    "id": "AP-C03",
+    "name": "Tailored Wool-Blend Blazer",
+    "style": "Blazer",
+    "composition": "Polyester with 30-35% Wool Blend",
+    "size": "S, M, L, XL, XXL",
+    "colors": "Pink, Beige, Coffee",
+    "stock_type": "Ready to Ship",
+    "image": "images/apparel/AP-C03-main.jpg",
+    "description": "A sharp, tailored single-button blazer in a soft wool-blend fabric with a slim, flattering cut. The classic notch lapel and mid-length silhouette make it a wardrobe essential for polished office wear and smart casual outfits."
   },
   {
-    "id": "AP-H03",
-    "name": "French Terry Relaxed Hoodie",
-    "style": "Hoodie",
-    "composition": "80% Cotton, 20% Polyester, 400GSM",
-    "size": "One Size / Custom",
-    "colors": "Heather Grey, Cream, Earth Brown",
+    "id": "AP-C04",
+    "name": "Relaxed Hooded Zip-Up Jacket",
+    "style": "Jacket",
+    "composition": "100% Polyester",
+    "size": "S, M, L, XL, XXL",
+    "colors": "Black",
     "stock_type": "Ready to Ship",
-    "image": "images/apparel picture.png",
-    "description": "Thick and cozy French Terry hoodie with a modern relaxed silhouette. Features premium ribbing and a clean, minimalist design."
+    "image": "images/apparel/AP-C04-main.jpg",
+    "description": "An easy, oversized hooded jacket with a clean zip front and functional pockets. Lightweight and mid-weight for transitional seasons, this minimalist piece pairs effortlessly with tees, joggers and denim for an off-duty casual look."
+  },
+  {
+    "id": "AP-C05",
+    "name": "Chenille Hooded Cardigan",
+    "style": "Cardigan",
+    "composition": "95% Polyester, 5% Spandex (Chenille)",
+    "size": "S, M, L, XL, 2XL, 3XL",
+    "colors": "Grey, Rose, Red, Camel, Black",
+    "stock_type": "Ready to Ship",
+    "image": "images/apparel/AP-C05-main.jpg",
+    "description": "A cozy chenille cardigan with a hooded collar and zip front, cut in a relaxed straight fit. Soft, plush and machine-washable, it delivers comfort and warmth for autumn layering — available in five versatile colors."
   }
 ]
