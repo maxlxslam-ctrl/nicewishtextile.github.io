@@ -435,7 +435,8 @@
       "images/products/YW711-color-3.jpg",
       "images/products/YW711-color-4.jpg"
     ],
-    "design_img": "images/products/YW711-design-1.jpg"
+    "design_img": "images/products/YW711-design-1.jpg",
+    "featured": true
   },
   {
     "id": "YW712",
@@ -460,7 +461,8 @@
     "design_img": [
       "images/products/YW712-design-1.jpg",
       "images/products/YW712-design-2.jpg"
-    ]
+    ],
+    "featured": true
   },
   {
     "id": "YW713",
@@ -481,7 +483,8 @@
       "images/products/YW713-color-1.jpg",
       "images/products/YW713-color-2.jpg"
     ],
-    "design_img": "images/products/YW713-design-1.jpg"
+    "design_img": "images/products/YW713-design-1.jpg",
+    "featured": true
   },
   {
     "id": "YW715",
@@ -502,7 +505,8 @@
     "design_img": [
       "images/products/YW715-design-1.jpg",
       "images/products/YW715-design-2.jpg"
-    ]
+    ],
+    "featured": true
   },
   {
     "id": "YW716",
@@ -526,7 +530,8 @@
     "design_img": [
       "images/products/YW716-design-1.jpg",
       "images/products/YW716-design-2.jpg"
-    ]
+    ],
+    "featured": true
   },
   {
     "id": "YW720",
@@ -550,7 +555,8 @@
     "design_img": [
       "images/products/YW720-design-1.jpg",
       "images/products/YW720-design-2.jpg"
-    ]
+    ],
+    "featured": true
   },
   {
     "id": "YW721",
@@ -575,7 +581,8 @@
     "design_img": [
       "images/products/YW721-design-1.jpg",
       "images/products/YW721-design-2.jpg"
-    ]
+    ],
+    "featured": true
   },
   {
     "id": "YW722",
@@ -598,7 +605,8 @@
     "design_img": [
       "images/products/YW722-design-1.jpg",
       "images/products/YW722-design-2.jpg"
-    ]
+    ],
+    "featured": true
   },
   {
     "id": "YW723",
@@ -621,7 +629,8 @@
     "design_img": [
       "images/products/YW723-design-1.jpg",
       "images/products/YW723-design-2.jpg"
-    ]
+    ],
+    "featured": true
   },
   {
     "id": "YW724",
@@ -645,7 +654,8 @@
     "design_img": [
       "images/products/YW724-design-1.jpg",
       "images/products/YW724-design-2.jpg"
-    ]
+    ],
+    "featured": true
   },
   {
     "id": "YW1252",
@@ -669,7 +679,8 @@
     "design_img": [
       "images/products/YW1252-design-1.jpg",
       "images/products/YW1252-design-2.jpg"
-    ]
+    ],
+    "featured": true
   },
   {
     "id": "YW1253",
@@ -695,6 +706,7 @@
       "images/products/YW1253-design-1.jpg",
       "images/products/YW1253-design-2.jpg",
       "images/products/YW1253-design-3.jpg"
-    ]
+    ],
+    "featured": true
   }
 ]
