@@ -416,5 +416,116 @@
     "color_card": "images/products/YSH6917-swatch-1.jpg",
     "description": "A high-performance jacquard knit with a sophisticated texture, engineered for both style and comfort. This moisture-wicking poly-cotton blend is ideal for modern sweatshirts and active lifestyle wear, offering a premium handfeel and excellent durability.",
     "application": "Fashionable sweatshirts, hoodies, Polo shirts, premium T-shirts"
+  },
+  {
+    "id": "YW711",
+    "name": "Ocean Wave Crinkle Fabric",
+    "composition": "100% Polyester",
+    "comp_tag": "100% Polyester",
+    "width": "150cm",
+    "weight": "120g/m²",
+    "weight_tag": "150gsm below",
+    "description": "Signature ocean-wave crinkle fabric in 100% polyester. The puckered, rippling texture adds instant dimension while staying feather-light at 120gsm. Available in a wide color range with large ready stock - a top choice for dresses, blouses and children's wear.",
+    "application": "Dresses, blouses, children's wear, lightweight fashion",
+    "image": "images/products/YW711-main.jpg",
+    "detail_img": "images/products/YW711-detail-1.jpg",
+    "color_card": [
+      "images/products/YW711-color-1.jpg",
+      "images/products/YW711-color-2.jpg",
+      "images/products/YW711-color-3.jpg",
+      "images/products/YW711-color-4.jpg"
+    ],
+    "design_img": "images/products/YW711-design-1.jpg"
+  },
+  {
+    "id": "YW712",
+    "name": "Thickened Bubble Crinkle Fabric",
+    "composition": "96% Polyester, 4% Spandex",
+    "comp_tag": "Polyester Spandex",
+    "width": "150cm",
+    "weight": "110g/m²",
+    "weight_tag": "150gsm below",
+    "description": "A thickened bubble crinkle fabric with a soft, puffy tactile surface. The polyester-spandex blend delivers gentle stretch and lasting recovery, while the dimensional bubble texture gives garments a modern, playful look.",
+    "application": "Fashion tops, dresses, skirts, statement casual wear",
+    "image": "images/products/YW712-main.jpg",
+    "detail_img": [
+      "images/products/YW712-detail-1.jpg",
+      "images/products/YW712-detail-2.jpg"
+    ],
+    "color_card": [
+      "images/products/YW712-color-1.jpg",
+      "images/products/YW712-color-2.jpg",
+      "images/products/YW712-color-3.jpg"
+    ],
+    "design_img": [
+      "images/products/YW712-design-1.jpg",
+      "images/products/YW712-design-2.jpg"
+    ]
+  },
+  {
+    "id": "YW713",
+    "name": "Thickened Check-Pattern Crinkle Fabric",
+    "composition": "100% Polyester",
+    "comp_tag": "100% Polyester",
+    "width": "150cm",
+    "weight": "110g/m²",
+    "weight_tag": "150gsm below",
+    "description": "Thickened crinkle fabric featuring a woven check pattern. The raised grid texture adds visual depth and a premium handfeel, while remaining lightweight and easy to care for - perfect for structured tops and casual dresses.",
+    "application": "Shirts, dresses, children's wear, casual fashion",
+    "image": "images/products/YW713-main.jpg",
+    "detail_img": [
+      "images/products/YW713-detail-1.jpg",
+      "images/products/YW713-detail-2.jpg"
+    ],
+    "color_card": [
+      "images/products/YW713-color-1.jpg",
+      "images/products/YW713-color-2.jpg"
+    ],
+    "design_img": "images/products/YW713-design-1.jpg"
+  },
+  {
+    "id": "YW715",
+    "name": "Tencel Crinkle Crepe Fabric",
+    "composition": "65% Tencel, 35% Nylon",
+    "comp_tag": "Lyocell Nylon Blend",
+    "width": "160cm",
+    "weight": "60g/m²",
+    "weight_tag": "150gsm below",
+    "description": "Ultra-light 60gsm crinkle crepe blended with 65% Tencel and 35% nylon. The Tencel content delivers a silky, breathable handfeel with natural drape, while the fine crinkle texture adds a subtle elegant shimmer - ideal for flowing dresses and blouses.",
+    "application": "Flowing dresses, blouses, scarves, lightweight layering",
+    "image": "images/products/YW715-main.jpg",
+    "detail_img": "images/products/YW715-detail-1.jpg",
+    "color_card": [
+      "images/products/YW715-color-1.jpg",
+      "images/products/YW715-color-2.jpg"
+    ],
+    "design_img": [
+      "images/products/YW715-design-1.jpg",
+      "images/products/YW715-design-2.jpg"
+    ]
+  },
+  {
+    "id": "YW716",
+    "name": "Tencel Vertical-Stripe Crinkle Fabric",
+    "composition": "75% Tencel, 25% Nylon",
+    "comp_tag": "Lyocell Nylon Blend",
+    "width": "150cm",
+    "weight": "95g/m²",
+    "weight_tag": "150gsm below",
+    "description": "A refined vertical-stripe crinkle fabric in 75% Tencel and 25% nylon. The vertical puckered texture elongates the silhouette and creates a clean, contemporary look, with a soft silky touch and excellent breathability for warm-weather styles.",
+    "application": "Dresses, tops, skirts, contemporary fashion",
+    "image": "images/products/YW716-main.jpg",
+    "detail_img": [
+      "images/products/YW716-detail-1.jpg",
+      "images/products/YW716-detail-2.jpg"
+    ],
+    "color_card": [
+      "images/products/YW716-color-1.jpg",
+      "images/products/YW716-color-2.jpg"
+    ],
+    "design_img": [
+      "images/products/YW716-design-1.jpg",
+      "images/products/YW716-design-2.jpg"
+    ]
   }
 ]
