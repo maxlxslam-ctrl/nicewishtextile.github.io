@@ -646,5 +646,55 @@
       "images/products/YW724-design-1.jpg",
       "images/products/YW724-design-2.jpg"
     ]
+  },
+  {
+    "id": "YW1252",
+    "name": "Wave Crinkle Fabric",
+    "composition": "97% Polyester, 3% Spandex",
+    "comp_tag": "Polyester Spandex",
+    "width": "150cm",
+    "weight": "130g/m²",
+    "weight_tag": "150gsm below",
+    "description": "Fluid wave crinkle fabric with soft, flowing ripple lines that add gentle motion to every garment. The 97% polyester and 3% spandex blend keeps it lightweight, wrinkle-resistant and easy to care for - ideal for breezy dresses and blouses.",
+    "application": "Breezy dresses, blouses, skirts, casual wear",
+    "image": "images/products/YW1252-main-1.jpg",
+    "detail_img": [
+      "images/products/YW1252-detail-1.jpg",
+      "images/products/YW1252-detail-2.jpg"
+    ],
+    "color_card": [
+      "images/products/YW1252-color-1.jpg",
+      "images/products/YW1252-color-2.jpg"
+    ],
+    "design_img": [
+      "images/products/YW1252-design-1.jpg",
+      "images/products/YW1252-design-2.jpg"
+    ]
+  },
+  {
+    "id": "YW1253",
+    "name": "Nylon-Polyester Crinkle Fabric",
+    "composition": "70% Polyester, 30% Nylon",
+    "comp_tag": "Polyester Nylon Blend",
+    "width": "150cm",
+    "weight": "120g/m²",
+    "weight_tag": "150gsm below",
+    "description": "A refined crinkle fabric blending 70% polyester with 30% nylon for a silky touch and lasting color retention. Lightweight and quick-drying, it drapes beautifully with a subtle sheen - perfect for fashion dresses and athleisure pieces.",
+    "application": "Fashion dresses, athleisure tops, skirts, lightweight wear",
+    "image": "images/products/YW1253-main-1.jpg",
+    "color_card": [
+      "images/products/YW1253-color-1.jpg",
+      "images/products/YW1253-color-2.jpg",
+      "images/products/YW1253-color-3.jpg",
+      "images/products/YW1253-color-4.jpg",
+      "images/products/YW1253-color-5.jpg",
+      "images/products/YW1253-color-6.jpg",
+      "images/products/YW1253-color-7.jpg"
+    ],
+    "design_img": [
+      "images/products/YW1253-design-1.jpg",
+      "images/products/YW1253-design-2.jpg",
+      "images/products/YW1253-design-3.jpg"
+    ]
   }
 ]
