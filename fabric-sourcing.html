@@ -94,6 +94,47 @@
             border-color: var(--secondary-color);
         }
 
+        /* Quick Nav (Featured) */
+        .quick-nav {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .nav-pill {
+            padding: 8px 22px;
+            border-radius: 20px;
+            border: 1px solid #cbd5e0;
+            background: white;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: 0.25s;
+        }
+        .nav-pill:hover { border-color: var(--secondary-color); color: var(--secondary-color); }
+        .nav-pill.active { background: var(--primary-color); color: white; border-color: var(--primary-color); }
+        .nav-pill.featured.active { background: #b7791f; border-color: #b7791f; }
+        .nav-pill.featured:hover { border-color: #b7791f; color: #b7791f; }
+
+        .featured-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: linear-gradient(135deg, #d69e2e, #b7791f);
+            color: white;
+            font-size: 0.75em;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(183,121,31,0.4);
+            z-index: 2;
+        }
+
         .products-section { padding: 50px 0 80px; background: var(--light-bg); min-height: 400px; }
         
         .products-grid {
@@ -110,6 +151,7 @@
             transition: 0.3s;
             display: flex;
             flex-direction: column;
+            position: relative;
         }
         
         .product-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
@@ -182,6 +224,10 @@
     <!-- Advanced Filter Bar -->
     <div class="filter-section">
         <div class="container">
+            <div class="quick-nav" id="quickNav">
+                <button class="nav-pill active" data-featured="all">All Fabrics</button>
+                <button class="nav-pill featured" data-featured="1">⭐ Featured Collection (<span id="featuredCount">0</span>)</button>
+            </div>
             <div class="filter-container">
                 <div class="filter-group">
                     <label class="filter-label">Keyword:</label>
@@ -234,6 +280,7 @@
 
     <script>
         let allFabrics = [];
+        let featuredOnly = false;
 
         async function init() {
             try {
@@ -247,6 +294,29 @@
                 document.getElementById('searchInput').addEventListener('input', applyFilters);
                 document.getElementById('compFilter').addEventListener('change', applyFilters);
                 document.getElementById('weightFilter').addEventListener('change', applyFilters);
+
+                // Featured quick-nav + shareable URL (?featured=1)
+                const featuredCount = allFabrics.filter(f => f.featured).length;
+                document.getElementById('featuredCount').textContent = featuredCount;
+                const params = new URLSearchParams(window.location.search);
+                if (params.get('featured') === '1') {
+                    featuredOnly = true;
+                    document.querySelector('.nav-pill[data-featured="1"]').classList.add('active');
+                    document.querySelector('.nav-pill[data-featured="all"]').classList.remove('active');
+                    applyFilters();
+                }
+                document.querySelectorAll('.nav-pill').forEach(pill => {
+                    pill.addEventListener('click', () => {
+                        featuredOnly = (pill.dataset.featured === '1');
+                        document.querySelectorAll('.nav-pill').forEach(p => p.classList.remove('active'));
+                        pill.classList.add('active');
+                        const url = new URL(window.location);
+                        if (featuredOnly) url.searchParams.set('featured', '1');
+                        else url.searchParams.delete('featured');
+                        history.replaceState(null, '', url);
+                        applyFilters();
+                    });
+                });
 
             } catch (e) {
                 document.getElementById('productsGrid').innerHTML = '<div class="loading">Error loading data.</div>';
@@ -276,8 +346,9 @@
                                    f.description.toLowerCase().includes(searchTerm);
                 const compMatch = (comp === 'all' || f.comp_tag === comp);
                 const weightMatch = (weight === 'all' || f.weight_tag === weight);
+                const featuredMatch = !featuredOnly || f.featured;
                 
-                return searchMatch && compMatch && weightMatch;
+                return searchMatch && compMatch && weightMatch && featuredMatch;
             });
             
             renderFabrics(filtered);
@@ -292,6 +363,7 @@
             
             grid.innerHTML = fabrics.map(f => `
                 <div class="product-card">
+                    ${f.featured ? '<div class="featured-badge">⭐ Featured</div>' : ''}
                     <img src="${f.image}" alt="${f.name}" class="product-image" loading="lazy">
                     <div class="product-info">
                         <h3 class="product-model">${f.id} - ${f.name}</h3>
