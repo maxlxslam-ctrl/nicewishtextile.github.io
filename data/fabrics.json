@@ -8,7 +8,12 @@
     "weight": "185g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY613-42.5%25%20Viscose%2034%25%20Nylon%2012.8%25%20Lyocell%201.7%25%20Silk%209%25%20Spandex-160cm-185gsm.jpg",
-    "description": "Luxury Lyocell-Silk Roma Knit Fabric - 185g High-End Tencel-Nylon Blend for Fashion T-Shirts & Skirts."
+    "description": "Luxury Lyocell-Silk Roma Knit Fabric - 185g High-End Tencel-Nylon Blend for Fashion T-Shirts & Skirts.",
+    "detail_img": "images/products/DY613-detail-1.jpg",
+    "color_card": [
+      "images/products/DY613-colors-1.jpg",
+      "images/products/DY613-colors-2.jpg"
+    ]
   },
   {
     "id": "DY810",
@@ -19,7 +24,9 @@
     "weight": "145g/m²",
     "weight_tag": "150gsm below",
     "image": "images/products/DY810-100%25%20Combed%20Cotton%20(Mercerized)-170cm-145gsm.jpg",
-    "description": "Premium Mercerized Combed Cotton fabric with smooth finish and enhanced luster."
+    "description": "Premium Mercerized Combed Cotton fabric with smooth finish and enhanced luster.",
+    "detail_img": "images/products/DY810-detail-1.jpg",
+    "color_card": "images/products/DY810-colors-1.jpg"
   },
   {
     "id": "DY820",
@@ -30,7 +37,13 @@
     "weight": "170g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY820-95%25%20Cotton%205%25%20Spandex%20(Mercerized)-175cm-170gsm.jpg",
-    "description": "Mercerized Cotton-Spandex blend with excellent stretch and recovery."
+    "description": "Mercerized Cotton-Spandex blend with excellent stretch and recovery.",
+    "detail_img": "images/products/DY820-detail-1.jpg",
+    "color_card": [
+      "images/products/DY820-colors-1.jpg",
+      "images/products/DY820-colors-2.jpg",
+      "images/products/DY820-colors-3.jpg"
+    ]
   },
   {
     "id": "DY822",
@@ -69,7 +82,9 @@
     "weight": "170g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY828-100%25%20Combed%20Cotton%20(Mercerized)-175cm-170gsm.jpg",
-    "description": "High-quality Mercerized Combed Cotton with smooth surface and enhanced strength."
+    "description": "High-quality Mercerized Combed Cotton with smooth surface and enhanced strength.",
+    "detail_img": "images/products/DY828-detail-1.jpg",
+    "color_card": "images/products/DY828-colors-1.jpg"
   },
   {
     "id": "DY833",
@@ -80,7 +95,9 @@
     "weight": "170g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY833-48%25%20Modal%2048%25%20Cotton%204%25%20Spandex-175cm-170gsm.jpg",
-    "description": "Premium Modal-Cotton-Spandex blend combining softness and stretch."
+    "description": "Premium Modal-Cotton-Spandex blend combining softness and stretch.",
+    "detail_img": "images/products/DY833-detail-1.jpg",
+    "color_card": "images/products/DY833-colors-1.jpg"
   },
   {
     "id": "DY841",
@@ -91,7 +108,9 @@
     "weight": "170g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY841-93%25cotton%207%25spandex-170cm-170gsm.jpg",
-    "description": "Exquisite 80s double-sided silky spandex fabric with a premium finish."
+    "description": "Exquisite 80s double-sided silky spandex fabric with a premium finish.",
+    "detail_img": "images/products/DY841-detail-1.jpg",
+    "color_card": "images/products/DY841-colors-1.jpg"
   },
   {
     "id": "DY848",
@@ -102,7 +121,9 @@
     "weight": "170g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY848%20-100s%2095%25cotton5%25spandex-175cm-170gsm.jpg",
-    "description": "Ultra-premium double-thread mercerized cotton single jersey with lasting luster."
+    "description": "Ultra-premium double-thread mercerized cotton single jersey with lasting luster.",
+    "detail_img": "images/products/DY848-detail-1.jpg",
+    "color_card": "images/products/DY848-colors-1.jpg"
   },
   {
     "id": "DY857",
@@ -113,7 +134,9 @@
     "weight": "180g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY857-50s%20100%25%20double%20thread%20mercerized%20cotton-170cm-180gsm.jpg",
-    "description": "High-grade double-thread mercerized cotton with a structured yet soft handfeel."
+    "description": "High-grade double-thread mercerized cotton with a structured yet soft handfeel.",
+    "detail_img": "images/products/DY857-detail-1.jpg",
+    "color_card": "images/products/DY857-colors-1.jpg"
   },
   {
     "id": "DY899",
@@ -124,7 +147,9 @@
     "weight": "210g/m²",
     "weight_tag": "205gsm - 260gsm",
     "image": "images/products/DY899-100%25%20Liquid%20Ammonia%20cotton-180cm-210gsm.jpg",
-    "description": "High-performance liquid ammonia treated single-sided cotton with wrinkle resistance."
+    "description": "High-performance liquid ammonia treated single-sided cotton with wrinkle resistance.",
+    "detail_img": "images/products/DY899-detail-1.jpg",
+    "color_card": "images/products/DY899-colors-1.jpg"
   },
   {
     "id": "DY900",
@@ -135,7 +160,9 @@
     "weight": "185g/m²",
     "weight_tag": "155gsm - 200gsm",
     "image": "images/products/DY900-50%25cotton%2050%25modal-170cm-185gsm.jpg",
-    "description": "Elegant European-style blend of mercerized cotton and modal with silky luster."
+    "description": "Elegant European-style blend of mercerized cotton and modal with silky luster.",
+    "detail_img": "images/products/DY900-detail-1.jpg",
+    "color_card": "images/products/DY900-colors-1.jpg"
   },
   {
     "id": "DY901",
@@ -146,7 +173,9 @@
     "weight": "120g/m²",
     "weight_tag": "150gsm below",
     "image": "images/products/DY901-76%25Nylon%2024%25cotton-170cm-120gsm.jpg",
-    "description": "Lightweight cotton-nylon blend with a unique linen-like twill texture."
+    "description": "Lightweight cotton-nylon blend with a unique linen-like twill texture.",
+    "detail_img": "images/products/DY901-detail-1.jpg",
+    "color_card": "images/products/DY901-colors-1.jpg"
   },
   {
     "id": "DY905",
@@ -155,7 +184,7 @@
     "comp_tag": "Modal Cotton Spandex",
     "width": "180cm",
     "weight": "260g/m²",
-    "weight_tag": "",
+    "weight_tag": "205gsm - 260gsm",
     "description": "High-quality 40S mercerized modal cotton interlock fabric, offering a silky smooth handfeel and excellent durability. Perfect for premium T-shirts and loungewear.",
     "application": "Premium T-shirts, loungewear, high-end fashion",
     "image": "images/products/DY905-main.jpg",
@@ -170,7 +199,7 @@
     "comp_tag": "100% Cotton",
     "width": "180cm",
     "weight": "300g/m²",
-    "weight_tag": "",
+    "weight_tag": "265gsm ~ 300gsm",
     "description": "Heavyweight 21S liquid ammonia treated cotton interlock fabric. Features superior wrinkle resistance, soft texture, and a premium matte finish.",
     "application": "Heavyweight T-shirts, sweatshirts, casual wear",
     "image": "images/products/DY915-main.jpg",
@@ -184,7 +213,7 @@
     "comp_tag": "100% Cotton",
     "width": "178cm",
     "weight": "230g/m²",
-    "weight_tag": "",
+    "weight_tag": "205gsm - 260gsm",
     "description": "Premium 40S liquid ammonia treated cotton interlock fabric. Offers a skin-friendly, soft touch with enhanced durability and luster.",
     "application": "Fashionable T-shirts, polo shirts, children's wear",
     "image": "images/products/DY917-main.jpg",
@@ -338,7 +367,7 @@
     "comp_tag": "Lyocell Cotton Spandex",
     "width": "180cm",
     "weight": "170g/m²",
-    "weight_tag": "",
+    "weight_tag": "155gsm - 200gsm",
     "image": "images/products/YSG1018-main.jpg",
     "detail_img": "images/products/YSG1018-detail-1.jpg",
     "color_card": "images/products/YSG1018-swatch-1.jpg",
@@ -352,7 +381,7 @@
     "comp_tag": "Lyocell Wool Blend",
     "width": "185CM",
     "weight": "170g/m²",
-    "weight_tag": "",
+    "weight_tag": "155gsm - 200gsm",
     "image": "images/products/YSG1023-main.jpg",
     "detail_img": "images/products/YSG1023-detail-1.jpg",
     "color_card": "images/products/YSG1023-swatch-1.jpg",
@@ -366,7 +395,7 @@
     "comp_tag": "Poly Rayon Spandex",
     "width": "160cm",
     "weight": "250g/m²",
-    "weight_tag": "",
+    "weight_tag": "205gsm - 260gsm",
     "image": "images/products/YSH6915-main.jpg",
     "detail_img": "images/products/YSH6915-detail-1.jpg",
     "color_card": "images/products/YSH6915-swatch-1.jpg",
@@ -381,7 +410,7 @@
     "comp_tag": "Poly Cotton Spandex",
     "width": "160cm",
     "weight": "250g/m²",
-    "weight_tag": "",
+    "weight_tag": "205gsm - 260gsm",
     "image": "images/products/YSH6917-main.jpg",
     "detail_img": "images/products/YSH6917-detail-1.jpg",
     "color_card": "images/products/YSH6917-swatch-1.jpg",
