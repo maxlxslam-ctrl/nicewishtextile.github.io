@@ -527,5 +527,124 @@
       "images/products/YW716-design-1.jpg",
       "images/products/YW716-design-2.jpg"
     ]
+  },
+  {
+    "id": "YW720",
+    "name": "Coarse Ridge Crinkle Fabric",
+    "composition": "97% Polyester, 3% Spandex",
+    "comp_tag": "Polyester Spandex",
+    "width": "150cm",
+    "weight": "135g/m²",
+    "weight_tag": "150gsm below",
+    "description": "Coarse ridge crinkle fabric with bold, three-dimensional grooves that create a structured yet soft handfeel. The 97% polyester and 3% spandex blend offers easy care and gentle stretch, making it a dependable choice for fashion-forward casual wear.",
+    "application": "Dresses, skirts, blouses, casual fashion",
+    "image": "images/products/YW720-main-1.jpg",
+    "detail_img": [
+      "images/products/YW720-detail-1.jpg",
+      "images/products/YW720-detail-2.jpg"
+    ],
+    "color_card": [
+      "images/products/YW720-color-1.jpg",
+      "images/products/YW720-color-2.jpg"
+    ],
+    "design_img": [
+      "images/products/YW720-design-1.jpg",
+      "images/products/YW720-design-2.jpg"
+    ]
+  },
+  {
+    "id": "YW721",
+    "name": "Ant-Texture Crinkle Fabric",
+    "composition": "95% Polyester, 5% Spandex",
+    "comp_tag": "Polyester Spandex",
+    "width": "150cm",
+    "weight": "150g/m²",
+    "weight_tag": "150gsm below",
+    "description": "Fine pebble-like 'ant-texture' crinkle fabric with a dense, grainy surface that catches light beautifully. With 5% spandex for comfortable stretch and recovery, it delivers a chic, tactile look ideal for modern dresses and tops.",
+    "application": "Fashion dresses, tops, skirts, contemporary wear",
+    "image": "images/products/YW721-main-1.jpg",
+    "detail_img": [
+      "images/products/YW721-detail-1.jpg",
+      "images/products/YW721-detail-2.jpg",
+      "images/products/YW721-detail-3.jpg"
+    ],
+    "color_card": [
+      "images/products/YW721-color-1.jpg",
+      "images/products/YW721-color-2.jpg"
+    ],
+    "design_img": [
+      "images/products/YW721-design-1.jpg",
+      "images/products/YW721-design-2.jpg"
+    ]
+  },
+  {
+    "id": "YW722",
+    "name": "Vertical Stripe Crinkle Fabric",
+    "composition": "96% Polyester, 4% Spandex",
+    "comp_tag": "Polyester Spandex",
+    "width": "150cm",
+    "weight": "140g/m²",
+    "weight_tag": "150gsm below",
+    "description": "Vertical-stripe crinkle fabric with clean, elongated puckered lines that visually slim the silhouette. The polyester-spandex blend keeps it lightweight, breathable and wrinkle-resistant - perfect for effortless everyday dressing.",
+    "application": "Dresses, tops, skirts, everyday fashion",
+    "image": "images/products/YW722-main-1.jpg",
+    "detail_img": [
+      "images/products/YW722-detail-1.jpg",
+      "images/products/YW722-detail-2.jpg"
+    ],
+    "color_card": [
+      "images/products/YW722-color-1.jpg"
+    ],
+    "design_img": [
+      "images/products/YW722-design-1.jpg",
+      "images/products/YW722-design-2.jpg"
+    ]
+  },
+  {
+    "id": "YW723",
+    "name": "Lantern Check Crinkle Fabric",
+    "composition": "98% Polyester, 2% Spandex",
+    "comp_tag": "Polyester Spandex",
+    "width": "150cm",
+    "weight": "110g/m²",
+    "weight_tag": "150gsm below",
+    "description": "A playful lantern-check pattern woven into a lightweight crinkle texture. At just 110gsm it floats beautifully, while the 2% spandex adds subtle ease - a charming option for feminine dresses and blouses.",
+    "application": "Feminine dresses, blouses, children's wear",
+    "image": "images/products/YW723-main-1.jpg",
+    "detail_img": [
+      "images/products/YW723-detail-1.jpg",
+      "images/products/YW723-detail-2.jpg"
+    ],
+    "color_card": [
+      "images/products/YW723-color-1.jpg"
+    ],
+    "design_img": [
+      "images/products/YW723-design-1.jpg",
+      "images/products/YW723-design-2.jpg"
+    ]
+  },
+  {
+    "id": "YW724",
+    "name": "Fashion Alternating Crinkle Fabric",
+    "composition": "96% Polyester, 4% Spandex",
+    "comp_tag": "Polyester Spandex",
+    "width": "150cm",
+    "weight": "120g/m²",
+    "weight_tag": "150gsm below",
+    "description": "Trend-forward crinkle fabric with alternating wide and narrow crinkle intervals for a dynamic, modern surface. Lightweight, breathable and easy-care, it brings a distinctive designer touch to casual and occasion wear.",
+    "application": "Designer dresses, tops, skirts, occasion wear",
+    "image": "images/products/YW724-main-1.jpg",
+    "detail_img": [
+      "images/products/YW724-detail-1.jpg",
+      "images/products/YW724-detail-2.jpg"
+    ],
+    "color_card": [
+      "images/products/YW724-color-1.jpg",
+      "images/products/YW724-color-2.jpg"
+    ],
+    "design_img": [
+      "images/products/YW724-design-1.jpg",
+      "images/products/YW724-design-2.jpg"
+    ]
   }
 ]
